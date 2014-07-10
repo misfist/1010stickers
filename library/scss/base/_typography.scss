@@ -124,15 +124,32 @@ h4 {
     }
 }
 
-p {
-    @include font-size($body-size-s);
-	@include breakpoint(medium) {@include font-size($body-size-m);}
-	@include breakpoint(large) {
-        @include font-size($body-size-l); 
-        // max-width: 40em; 
+p{
+    @include media($mobile) {
+        @include font-size($body-size-s);
+    }
+    @include media($tablet) {
+        @include font-size($body-size-m);
+    }
+    @include media($desktop) {
+        @include font-size($body-size-l);
         line-height: 1.75;
     }
 }
+
+.copyright {
+    @include media($mobile) {
+        @include font-size($small-size-s);
+    }
+    @include media($tablet) {
+        @include font-size($small-size-m);
+    }
+    @include media($desktop) {
+        @include font-size($small-size-l);
+        line-height: 1.75;
+    }
+}
+
 
 
 li, dt, dd {
