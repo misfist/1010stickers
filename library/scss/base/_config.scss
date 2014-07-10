@@ -1,0 +1,191 @@
+// STARTER VARIABLES AND MIXINS
+
+
+// COLORS
+
+$primary: #0077BD;
+$secondary: #071689;
+$accent: #D0112B;
+
+$blue: #0077BD;
+$darkblue: #001689;
+$red: #D0112B;
+
+$black: #000;
+$white: #fff;
+
+$background: #11100E;
+
+
+// shades of beige -- HSB(43, 3, X)
+$gray0: lighten($black, 10%);
+$gray9: #D0D2D3;
+$gray8: lighten($black, 30%);
+$gray7: lighten($black, 40%);
+$gray6: #6F747B;
+$gray5: lighten($black, 60%);
+$gray4: #3F454F;
+$gray3: lighten($black, 80%);
+$gray2: lighten($black, 90%);
+$gray1: lighten($black, 95%);
+
+
+// Tutorial: how to use color variables properly:
+// http://sachagreif.com/sass-color-variables/
+
+$text-color: $gray4;
+$anchor-color: lighten($gray6, 10%);
+$anchor-hover: lighten($gray6, 20%);
+$headline-color: $gray9;
+
+$hr-color: $gray9;
+
+
+// TYPE SIZES
+// http://typecast.com/blog/a-more-modern-scale-for-web-typography
+
+$h1-size-s: 32;
+$h2-size-s: 18;
+$h3-size-s: 18;
+$h4-size-s: 18;
+$body-size-s: 16;
+$caption-size-s: 14;
+$small-size-s: 12;
+
+$h1-size-m: 40;
+$h2-size-m: 18;
+$h3-size-m: 24;
+$h4-size-m: 21;
+$body-size-m: 18;
+$caption-size-m: 15;
+$small-size-m: 13;
+
+$h1-size-l: 48;
+$h2-size-l: 18;
+$h3-size-l: 32;
+$h4-size-l: 22;
+$body-size-l: 20;
+$caption-size-l: 16;
+$small-size-l: 14;
+
+
+// BORDERS
+
+$frame-border: 5px solid $white;
+
+
+// LAYERS
+
+$layer1: 1; // content
+$layer2: 2; // hovers
+$layer3: 3; // cloak
+$layer4: 4; // lightbox
+$layer5: 5; // lightbox content
+
+
+
+// GRID (BOURBON NEAT) //
+// so great! read the docs:
+// neat.bourbon.io/docs/
+
+$grid-columns: 12;
+$max-width: 1025px;
+
+
+// MIXINS 
+// read the Bourbon docs for all kinds of well-tested mixins 
+// check there before adding new ones
+// http://bourbon.io/docs/
+
+
+// RWD BREAKPOINTS 
+// mobile first! so you only have to use floats etc in larger sizes
+// set breakpoints where your content breaks, not particular devices
+
+@mixin breakpoint($point) {
+	@if $point == tiny {
+		@media (min-width: 321px)  { @content; } 
+	}
+	@if $point == small {
+		@media (min-width: 481px) { @content; }
+	}
+	@if $point == medium {
+		@media (min-width: 769px) { @content; }
+	}
+	@else if $point == large {
+		@media (min-width: 1025px) { @content; }
+	}
+}
+
+$mobile: new-breakpoint(max-width 480px);
+$tablet: new-breakpoint(max-width 768px min-width 481px);
+$desktop: new-breakpoint(min-width 768px);
+$large: new-breakpoint(min-width 1025px);
+
+
+// CLEARFIX
+
+// for old markup w/clearfix class:
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// for semantic markup, a la http://blog.teamtreehouse.com/a-better-clearfix-with-sass
+%clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+// NOTCHED LINE
+
+@mixin notch($size, $border: $gray5, $fill: $gray9){
+    position: relative;
+    a:before,
+    a:after {
+        position: absolute;
+        content: '';
+        height: 0px;
+        left: 50%;
+        bottom: -1px;
+        border-color: transparent;
+    }
+    a:before {
+        border-bottom-color: $border;
+        border-width: $size;
+        margin-left: -$size;
+    }
+    a:after {
+        border-bottom-color: $fill;
+        border-width: $size - 1;
+        margin-left: -$size + 1;
+    }
+}
+
+
+
+
+// STATES
+
+.is-hidden {
+	display: none;
+}
+
+.fullwidth { 
+	width: 100%; 
+}
+
+
+
+// BROWSER ADJUSTMENTS
+
+// standardize box model across browsers! IE8 and up. bit.ly/1eXrOej 
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+

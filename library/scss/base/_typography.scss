@@ -1,0 +1,225 @@
+// BASE STYLES
+// variations are in _posts partial
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lora);
+
+
+// Font Variables
+$sans:        "Open Sans", sans-serif;
+$lora:        "Lora", serif;
+$caps-spacing: 1px;
+
+
+
+// FONT SIZING
+// http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+@mixin font-size($size: 16){
+  font-size: $size + px;
+  font-size: $size / 16 + rem;
+}
+
+html {
+    font-size: 100%; // 16px 
+}
+
+body {
+    @include font-size($body-size-s);
+    font-family: $lora;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+
+// FONT SPACING
+// http://csswizardry.com/2012/06/single-direction-margin-declarations/
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr{
+    margin-top: 0;
+    margin-bottom: 1.5rem; // equal to body line-height to create vertical rhythm
+}
+
+
+// HEADERS
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+	text-rendering: optimizelegibility;
+    color: $headline-color;
+    font-family: $sans;
+    font-weight: 800;
+    a {
+		text-decoration: none;
+	}
+
+}
+
+h1, h2, h6, small {
+    line-height: 1.2;
+}
+
+h3, h4, h5 {
+    line-height: 1.3;
+}
+
+
+h1 {
+    @include media($mobile) {
+        @include font-size($h1-size-s);
+    }
+    @include media($tablet) {
+        @include font-size($h1-size-m);
+    }
+    @include media($desktop) {
+        @include font-size($h1-size-l);
+    }
+}
+
+h2 {
+    @include media($mobile) {
+        @include font-size($h2-size-s);
+    }
+    @include media($tablet) {
+        @include font-size($h2-size-m);
+    }
+    @include media($desktop) {
+        @include font-size($h2-size-l);
+    }
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-bottom: .25em;
+    margin-top: 0;
+    @include media($mobile) {
+        @include font-size($h3-size-s);
+    }
+    @include media($tablet) {
+        @include font-size($h3-size-m);
+    }
+    @include media($desktop) {
+        @include font-size($h3-size-m);
+    }
+    @include media($large) {
+        @include font-size($h3-size-l);
+        line-height: 2.9rem;
+    }
+}
+
+h4 {
+    @include media($mobile) {
+        @include font-size($h4-size-s);
+    }
+    @include media($tablet) {
+        @include font-size($h4-size-m);
+    }
+    @include media($desktop) {
+        @include font-size($h4-size-l);
+    }
+}
+
+p {
+    @include font-size($body-size-s);
+	@include breakpoint(medium) {@include font-size($body-size-m);}
+	@include breakpoint(large) {
+        @include font-size($body-size-l); 
+        // max-width: 40em; 
+        line-height: 1.75;
+    }
+}
+
+
+li, dt, dd {
+    @include font-size($body-size-s);
+	margin-bottom: .75em;
+	@include breakpoint(medium) {@include font-size($body-size-m);}
+	@include breakpoint(large) {@include font-size($body-size-l); max-width: 40em; line-height: 1.75;}
+}
+
+input, label, select, textarea {
+    @include font-size($body-size-s);
+	margin-bottom: .75em;
+	font-family: $sans;
+	font-weight: 300;
+	@include breakpoint(medium) {@include font-size($body-size-m);}
+	@include breakpoint(large) {@include font-size($body-size-l);}
+}
+
+small {
+    @include font-size($small-size-s);
+	@include breakpoint(medium) {@include font-size($small-size-m);}
+	@include breakpoint(large) {@include font-size($small-size-l);}
+}
+
+
+
+b, strong {
+  font-weight: 700;
+}
+
+i, em {
+    font-style: italic;
+}
+
+
+blockquote {
+    padding: 0 10% 0 0;
+    margin: 1.5em 0;
+    p, li {
+    	color: $gray5;
+        font-style: italic;
+    }
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Courier New', Courier, monospace;
+    @include font-size($body-size-s);
+	@include breakpoint(medium) {@include font-size($body-size-m);}
+	@include breakpoint(large) {@include font-size($body-size-l);}
+}
+
+pre {
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    display: block;
+    background: $gray2;
+    color: $white;
+}
+
+a.button {
+    @include button($hovercolor: $red, $hoverbackground: $white, $hoverborder: $red);
+}
+
+#photos,
+#intro {
+    a.button {
+        @include button($bordercolor: $red, $hovercolor: $blue, $hoverbackground: $white, $hoverborder: $blue);
+    }
+}
+
+section {
+    h2 {
+        border-bottom: {
+            @include standard-border ($width: 2px);
+        }
+        span {
+            @include span-columns(4);
+            @include shift(4);
+            background: $white;
+            margin-top: -9px;
+        }
+    }
+}
+
+//Links
+@include standard-links;
+

@@ -1,0 +1,1076 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lora);
+/* COMMUNITY CSS */
+/* This stylesheet was written in Sass and compiled locally */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000310}}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000319}}
+body {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000341}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000352}}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000361}}
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000371}}
+[hidden],
+template {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000379}}
+a {
+  background: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000387}}
+a:active,
+a:hover {
+  outline: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\0000395}}
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003103}}
+b,
+strong {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003110}}
+dfn {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003118}}
+h1 {
+  font-size: 2em;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003126}}
+mark {
+  background: #ff0;
+  color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003134}}
+small {
+  font-size: 80%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003142}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003149}}
+sup {
+  top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003153}}
+sub {
+  bottom: -0.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003161}}
+img {
+  border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003167}}
+svg:not(:root) {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003174}}
+figure {
+  margin: 1em 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003180}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003189}}
+pre {
+  overflow: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003199}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003218}}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003227}}
+button {
+  overflow: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003238}}
+button,
+select {
+  text-transform: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003252}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003261}}
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003269}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003278}}
+input {
+  line-height: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003290}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003301}}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003310}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003323}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003330}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003340}}
+legend {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003348}}
+textarea {
+  overflow: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003356}}
+optgroup {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003364}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/vendor\/_normalize\.scss}line{font-family:\00003370}}
+td,
+th {
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_grid\.scss}line{font-family:\000032}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_config\.scss}line{font-family:\00003129}}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_config\.scss}line{font-family:\00003174}}
+.is-hidden {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_config\.scss}line{font-family:\00003178}}
+.fullwidth {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_config\.scss}line{font-family:\00003187}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\000037}}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000314}}
+hr {
+  border: 0;
+  height: 1px;
+  background: #d0d2d3;
+  margin: 2rem 0 4rem 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000325}}
+body > header > section article,
+body > main > section article,
+body > footer > section article {
+  *zoom: 1;
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+  body > header > section article:before, body > header > section article:after,
+  body > main > section article:before,
+  body > main > section article:after,
+  body > footer > section article:before,
+  body > footer > section article:after {
+    content: " ";
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+  body > header > section article:after,
+  body > main > section article:after,
+  body > footer > section article:after {
+    clear: both; }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000325}}
+    body > header > section article,
+    body > main > section article,
+    body > footer > section article {
+      padding-right: .5em;
+      padding-left: .5em; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000325}}
+    body > header > section article,
+    body > main > section article,
+    body > footer > section article {
+      padding-right: .5em;
+      padding-left: .5em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000336}}
+body > header > section#footer,
+body > main > section#footer,
+body > footer > section#footer {
+  *zoom: 1;
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+  body > header > section#footer:before, body > header > section#footer:after,
+  body > main > section#footer:before,
+  body > main > section#footer:after,
+  body > footer > section#footer:before,
+  body > footer > section#footer:after {
+    content: " ";
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+  body > header > section#footer:after,
+  body > main > section#footer:after,
+  body > footer > section#footer:after {
+    clear: both; }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000336}}
+    body > header > section#footer,
+    body > main > section#footer,
+    body > footer > section#footer {
+      padding-right: .5em;
+      padding-left: .5em; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000336}}
+    body > header > section#footer,
+    body > main > section#footer,
+    body > footer > section#footer {
+      padding-right: .5em;
+      padding-left: .5em; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000350}}
+body > header {
+  *zoom: 1;
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 509px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+  body > header:before, body > header:after {
+    content: " ";
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+  body > header:after {
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_containers\.scss}line{font-family:\0000358}}
+section {
+  *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+  section:before, section:after {
+    content: " ";
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+  section:after {
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000323}}
+html {
+  font-size: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000327}}
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #3f454f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000342}}
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr {
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000350}}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  text-rendering: optimizelegibility;
+  color: #d0d2d3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000356}}
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000362}}
+h1, h2, h6, small {
+  line-height: 1.2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000366}}
+h3, h4, h5 {
+  line-height: 1.3; }
+
+@media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000371}}
+  h1 {
+    font-size: 32px;
+    font-size: 2rem; } }
+@media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000371}}
+  h1 {
+    font-size: 40px;
+    font-size: 2.5rem; } }
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000371}}
+  h1 {
+    font-size: 48px;
+    font-size: 3rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000383}}
+h2 {
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000383}}
+    h2 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000383}}
+    h2 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000383}}
+    h2 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000397}}
+h3 {
+  margin-bottom: .25em;
+  margin-top: 0; }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000397}}
+    h3 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000397}}
+    h3 {
+      font-size: 24px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000397}}
+    h3 {
+      font-size: 24px;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\0000397}}
+    h3 {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.9rem; } }
+
+@media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003115}}
+  h4 {
+    font-size: 18px;
+    font-size: 1.125rem; } }
+@media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003115}}
+  h4 {
+    font-size: 21px;
+    font-size: 1.3125rem; } }
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003115}}
+  h4 {
+    font-size: 22px;
+    font-size: 1.375rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003127}}
+p {
+  font-size: 16px;
+  font-size: 1rem; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003127}}
+    p {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003127}}
+    p {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.75; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003138}}
+li, dt, dd {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: .75em; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003138}}
+    li, dt, dd {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003138}}
+    li, dt, dd {
+      font-size: 20px;
+      font-size: 1.25rem;
+      max-width: 40em;
+      line-height: 1.75; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003145}}
+input, label, select, textarea {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: .75em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003145}}
+    input, label, select, textarea {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003145}}
+    input, label, select, textarea {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003154}}
+small {
+  font-size: 12px;
+  font-size: 0.75rem; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003154}}
+    small {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003154}}
+    small {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003162}}
+b, strong {
+  font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003166}}
+i, em {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003171}}
+blockquote {
+  padding: 0 10% 0 0;
+  margin: 1.5em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003174}}
+  blockquote p, blockquote li {
+    color: #999999;
+    font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003183}}
+code,
+kbd,
+pre,
+samp {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-size: 1rem; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003183}}
+    code,
+    kbd,
+    pre,
+    samp {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003183}}
+    code,
+    kbd,
+    pre,
+    samp {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003190}}
+pre {
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  display: block;
+  background: #e6e6e6;
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003198}}
+a.button {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_mixins\.scss}line{font-family:\0000375}}
+  a.button:hover {
+    background-color: white;
+    color: #d0112b;
+    border-color: #d0112b;
+    border-width: 2px;
+    border-style: solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003204}}
+#photos a.button,
+#intro a.button {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  color: #d0112b;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border-color: #d0112b;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_mixins\.scss}line{font-family:\0000375}}
+  #photos a.button:hover,
+  #intro a.button:hover {
+    background-color: white;
+    color: #0077bd;
+    border-color: #0077bd;
+    border-width: 2px;
+    border-style: solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003210}}
+section h2 {
+  border-bottom-color: #d0d2d3;
+  border-bottom-width: 2px;
+  border-bottom-style: solid; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_typography\.scss}line{font-family:\00003214}}
+  section h2 span {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 34.11922%;
+    background: white;
+    margin-top: -9px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+    section h2 span:last-child {
+      margin-right: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_mixins\.scss}line{font-family:\0000341}}
+a,
+a:link {
+  border: none;
+  color: #898e94;
+  font-weight: normal;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_mixins\.scss}line{font-family:\0000347}}
+a:visited {
+  border: none;
+  color: #6f747b;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_mixins\.scss}line{font-family:\0000352}}
+a:hover {
+  border: none;
+  color: #898e94;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\000033}}
+body > header {
+  background: url(../images/header.jpg) no-repeat top center;
+  background-size: 100%; }
+  @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\000039}}
+    body > header section {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      body > header section:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000314}}
+    body > header section.tagline {
+      margin-top: 55%;
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      body > header section.tagline:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000318}}
+      body > header section.tagline h3 {
+        color: #d0112b;
+        text-align: center; } }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000314}}
+    body > header section.tagline {
+      margin-top: 55%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000325}}
+      body > header section.tagline h3 {
+        color: #d0112b;
+        text-align: center; } }
+  @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000314}}
+    body > header section.tagline {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 51.17883%;
+      padding: 100px 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      body > header section.tagline:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000335}}
+      body > header section.tagline h3 {
+        color: white; } }
+  @media screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000314}}
+    body > header section.tagline {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 51.17883%;
+      padding: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      body > header section.tagline:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_header\.scss}line{font-family:\0000343}}
+      body > header section.tagline h3 {
+        color: white; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\000033}}
+body > footer {
+  background: #3f454f;
+  font-family: "Open Sans", sans-serif;
+  color: #6f747b;
+  font-weight: 800;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000312}}
+  body > footer a {
+    text-transform: uppercase;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000317}}
+  body > footer div {
+    *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+    body > footer div:before, body > footer div:after {
+      content: " ";
+      display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+    body > footer div:after {
+      clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000319}}
+    body > footer div.footer-nav {
+      margin: 18px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000321}}
+      body > footer div.footer-nav a {
+        font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000326}}
+  body > footer ul li {
+    font-weight: 300; }
+    @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000326}}
+      body > footer ul li {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        body > footer ul li:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000326}}
+      body > footer ul li {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        body > footer ul li:last-child {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+        body > footer ul li:nth-child(3n) {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+        body > footer ul li:nth-child(3n+1) {
+          clear: left; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000335}}
+    body > footer ul li strong {
+      font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000338}}
+    body > footer ul li p {
+      font-size: .9rem;
+      line-height: 1.3rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000341}}
+      body > footer ul li p:first-child {
+        margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000345}}
+    body > footer ul li p + p {
+      margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_footer\.scss}line{font-family:\0000348}}
+    body > footer ul li a {
+      text-transform: none;
+      font-weight: 300; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\000033}}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_mixins\.scss}line{font-family:\000035}}
+  ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\000038}}
+  ul img {
+    width: 100%;
+    height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000314}}
+section#intro {
+  padding-top: 60px;
+  padding-bottom: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000317}}
+  section#intro article {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000319}}
+    section#intro article p {
+      margin-bottom: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000321}}
+      section#intro article p:nth-child(2) {
+        color: #d0112b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000328}}
+section#order {
+  padding-top: 70px;
+  padding-bottom: 54px;
+  background: #0077bd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000332}}
+  section#order p {
+    text-align: center;
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000336}}
+  section#order .images {
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000336}}
+      section#order .images {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        section#order .images:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000336}}
+      section#order .images {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        section#order .images:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000336}}
+      section#order .images {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        section#order .images:last-child {
+          margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000351}}
+    section#order .images figure {
+      margin-bottom: 14%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000353}}
+      section#order .images figure img {
+        width: 100%;
+        max-width: 547px;
+        height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000359}}
+    section#order .images div.caption {
+      text-align: center;
+      width: 48%;
+      display: inline-block;
+      font-size: 18px;
+      font-size: 1.125rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #001689; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000373}}
+section#partners {
+  padding-top: 70px; }
+  @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000373}}
+    section#partners {
+      padding-top: 30px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000378}}
+  section#partners ul.partners {
+    *zoom: 1;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-top: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+    section#partners ul.partners:before, section#partners ul.partners:after {
+      content: " ";
+      display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+    section#partners ul.partners:after {
+      clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+    section#partners ul.partners:last-child {
+      margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000382}}
+    section#partners ul.partners li {
+      height: 142px;
+      line-height: 142px; }
+      @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000382}}
+        section#partners ul.partners li {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 100%;
+          height: 110%;
+          line-height: 110%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+          section#partners ul.partners li:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000382}}
+        section#partners ul.partners li {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+          section#partners ul.partners li:last-child {
+            margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+          section#partners ul.partners li:nth-child(2n) {
+            margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+          section#partners ul.partners li:nth-child(2n+1) {
+            clear: left; } }
+      @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\0000382}}
+        section#partners ul.partners li {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+          section#partners ul.partners li:last-child {
+            margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+          section#partners ul.partners li:nth-child(4n) {
+            margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+          section#partners ul.partners li:nth-child(4n+1) {
+            clear: left; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003100}}
+      section#partners ul.partners li img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003105}}
+        section#partners ul.partners li img.bfmw {
+          max-width: 142px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003108}}
+        section#partners ul.partners li img.msa {
+          max-width: 195px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003111}}
+        section#partners ul.partners li img.scap {
+          max-width: 214px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003114}}
+        section#partners ul.partners li img.ug {
+          max-width: 200px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003123}}
+section#photos {
+  text-align: center;
+  padding-bottom: 82px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003126}}
+  section#photos ul {
+    *zoom: 1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+    section#photos ul:before, section#photos ul:after {
+      content: " ";
+      display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+    section#photos ul:after {
+      clear: both; }
+    @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003131}}
+      section#photos ul li {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        section#photos ul li:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 768px) and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003131}}
+      section#photos ul li {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        section#photos ul li:last-child {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+        section#photos ul li:nth-child(2n) {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+        section#photos ul li:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/base\/_content\.scss}line{font-family:\00003131}}
+      section#photos ul li {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        section#photos ul li:last-child {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+        section#photos ul li:nth-child(3n) {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/1010sticker\/library\/scss\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+        section#photos ul li:nth-child(3n+1) {
+          clear: left; } }

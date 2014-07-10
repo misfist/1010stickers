@@ -1,0 +1,135 @@
+// MIXINS
+
+@mixin no-bullets {
+  list-style: none;
+  li {
+    @include no-bullet; 
+  } 
+}
+
+@mixin no-bullet {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px; 
+}
+
+@mixin header-style ($family: $header-font-family, $size: $h2-font-size, $transform: uppercase, $color: $text-color-prominent, $weight: normal) {
+  font-size: $size;
+  font-family: $family;
+  color: $color;
+  text-transform: $transform;
+  font-weight: $weight;
+}
+
+@mixin body-text ($family: $font-body, $size: $base-font-size, $line-height: $base-line-height + 2, $color: $text-color, $weight: normal, $transform: none ) {
+  font-size: $size;
+  font-family: $family;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line-height;
+  text-transform: $transform;
+}
+
+@mixin standard-border ($color: $hr-color, $width: 1px, $style: solid) {
+  color: $color;
+  width: $width;
+  style: $style;
+}
+
+@mixin standard-links ($color: $anchor-color, $vcolor: darken($anchor-color,10%), $hcolor: $anchor-color, $weight: normal, $text-decoration: none, $text-transform: none, $border: none) {
+  a,
+  a:link {
+    border: $border;
+    color: $color;
+    font-weight: $weight;
+    text-decoration: $text-decoration;
+  }
+  a:visited {
+    border: $border;
+    color: $vcolor;
+    text-decoration: $text-decoration;
+  }
+  a:hover {
+    border: $border;
+    color: $hcolor;
+    text-decoration: $text-decoration;
+  }
+}
+
+@mixin button($bordercolor: $white, $borderwidth: 2px, $width: 250px, $height: 50px, $size: 1.2rem, $background: transparent, $hovercolor: $gray2, $hoverbackground: $gray2, $hoverborder: $gray2, $transform: uppercase) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    color: $bordercolor;
+    font-size: $size;
+    font-family: $sans;
+    font-weight: 800;
+    border: {
+      @include standard-border ($color: $bordercolor, $width: $borderwidth, $style: solid);
+    }
+    background-color: $background;
+    text-transform: $transform;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background-color: $hoverbackground;
+      color: $hovercolor;
+      border: {
+        @include standard-border ($color: $hoverborder, $width: $borderwidth);
+      }
+    }
+}
+
+@mixin fancy-header-line($background: $white, $bordercolor: $gray6, $borderwidth: 2px, $margin: 30px, $padding: 15px) {
+  border-top: {
+    @include standard-border ($color: $bordercolor, $width: $borderwidth, $style: solid);
+  }
+  position: relative;
+  span {
+    position: absolute;
+    margin-top: -.5em;
+    background: $background;
+    padding-right: .5em;
+    padding-left: .5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin shadow ($hoffset: 3px, $voffset: 6px, $color: $gray0, $width: 190px, $rounded: false) {
+  @if $rounded {
+      -moz-box-shadow: 0px $hoffset $voffset $color; 
+      -webkit-box-shadow: 0px $hoffset $voffset $color; 
+      box-shadow: 0px $hoffset $voffset$color; 
+      -moz-border-radius: $width; 
+      -webkit-border-radius: $width; 
+      border-radius: $width;
+      } @else {
+      -moz-box-shadow: 0px $hoffset $voffset $color; 
+      -webkit-box-shadow: 0px $hoffset $voffset $color; 
+      box-shadow: 0px $hoffset $voffset $color; 
+    }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+// BUTTON THAT FLIPS BG/TEXT COLORS ON HOVER
+
+@mixin flip-button($color){
+    background: $color;
+    border-color: $color;
+    color: $white !important;
+    &:hover,
+    &:focus {
+        background: $white;
+        color: $color !important;
+    }
+}

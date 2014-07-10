@@ -1,0 +1,145 @@
+// CONTENT
+
+ul {
+  @include no-bullets;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+section#intro {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  article {
+    text-align: center;
+    p {
+      margin-bottom: 40px;
+      &:nth-child(2) {
+        color: $red;
+      }
+    }
+  }
+}
+
+section#order {
+  padding-top: 70px;
+  padding-bottom: 54px;
+  background: $blue;
+  p {
+    text-align: center;
+    color: $white;
+  }
+  .images {
+    text-align: center;
+    
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+    @include media($tablet) {
+      @include span-columns(8);
+      @include shift(2);  
+    }
+    @include media($desktop) {
+      @include span-columns(6);
+      @include shift(3);  
+    }
+
+    figure {
+      margin-bottom: 14%;
+      img {
+        width: 100%;
+        max-width: 547px;
+        height: auto;
+      }
+    }
+     div.caption {
+        text-align: center;
+        width: 48%;
+        display: inline-block;
+        @include font-size($h4-size-s);
+        font-family: $sans;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $darkblue;
+      }
+    }
+
+}
+
+section#partners {
+  padding-top: 70px;
+  @include media($mobile) {
+    padding-top: 30px;
+  }
+  ul.partners {
+    @include clearfix;
+    @include span-columns(12);
+    padding-top: 12px;
+    li {
+      height: 142px;
+      line-height: 142px;
+
+      @include media($mobile) {
+        @include span-columns(12);
+        height: 110%;
+        line-height: 110%;
+      }
+      @include media($tablet) {
+        @include span-columns(6);
+         @include omega(2n);
+      }
+      @include media($desktop) {
+        @include span-columns(3);
+         @include omega(4n);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+
+        &.bfmw {
+          max-width: 142px;
+        }
+        &.msa {
+          max-width: 195px
+        }
+        &.scap {
+          max-width: 214px
+        }
+        &.ug {
+          max-width: 200px
+        }
+
+      }
+    }
+  }
+}
+
+section#photos {
+  text-align: center;
+  padding-bottom: 82px;
+  ul {
+    @include clearfix;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    li {
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+      @include media($tablet) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      @include media($desktop) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+    }
+  }
+}

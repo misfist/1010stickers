@@ -1,0 +1,62 @@
+// CONTAINERS 
+
+
+// base
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: $hr-color;
+	margin: 2rem 0 4rem 0;
+}
+
+body>header,
+body>main,
+body>footer {
+    &>section {
+      article {
+         @include outer-container;
+          @include media($mobile) {
+            padding-right: .5em;
+            padding-left: .5em;
+          }
+          @include media($tablet) {
+            padding-right: .5em;
+            padding-left: .5em;
+          }
+      }
+      &#footer {
+        @include outer-container;
+        @include media($mobile) {
+            padding-right: .5em;
+            padding-left: .5em;
+        }
+        @include media($tablet) {
+          padding-right: .5em;
+          padding-left: .5em;
+        }
+      }
+  }
+}
+
+body>header {
+  @include outer-container;
+  max-height: 509px;
+   @include media($desktop) {
+    }
+
+}
+
+section {
+  @include clearfix;
+}
+
+

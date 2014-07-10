@@ -1,0 +1,54 @@
+// FOOTER
+
+body>footer {
+    background: $gray4;
+    font-family: $sans;
+    color: $gray6;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    a {
+        text-transform: uppercase;
+        
+        @include word-wrap;
+    }
+    div {
+        @include clearfix;
+        &.footer-nav {
+            margin: 18px 0;
+            a {
+                font-weight: 800;
+            }
+        }        
+    }
+    ul li {
+      @include media($tablet) {
+        @include span-columns(12);
+      }
+      @include media($desktop) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+        font-weight: 300;
+        strong {
+            font-weight: 800;
+        }
+        p {
+            font-size: .9rem;
+            line-height: 1.3rem;
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+        p+p {
+            margin-bottom: 0;
+        }
+        a {
+            text-transform: none;
+            font-weight: 300;
+        }
+    }
+
+}
