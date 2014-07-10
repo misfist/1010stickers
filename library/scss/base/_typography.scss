@@ -137,7 +137,8 @@ p{
     }
 }
 
-.copyright {
+.copyright,
+.contacts p {
     @include media($mobile) {
         @include font-size($small-size-s);
     }
