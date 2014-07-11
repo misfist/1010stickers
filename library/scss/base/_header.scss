@@ -1,33 +1,75 @@
 // HEADER
 
-body>header {
-	// min-height: 509px;
-	// background: $background;
-	background: url(../images/header.jpg) no-repeat top center;
-	background-size: 100%;
+// Header heights
+$header-large: 509px;
+$header-desktop: 509px;
+$header-tablet: 375px;
+$header-mobile: 330px;
 
+// Tagline height
+$tagline-large: 0;
+$tagline-desktop: 0;
+$tagline-tablet: 140px;
+$tagline-mobile: 140px;
+
+body>header {
+	background: url(../images/header.jpg) no-repeat top center;
+	@include clearfix;
+	min-height: 509px;
+
+	@include media($mobile) {
+		background-size: 100%;
+		background-position: 0 $tagline-mobile;
+		height: $header-mobile;
+		// min-height: 300px;
+	}
+	@include media($tablet) {
+		background-size: 100%;
+		background-position: 0 $tagline-tablet;
+		height: $header-tablet;
+		// min-height: 300px;
+	}
+	@include media($desktop) {
+		background-size: 100%;
+		height: $header-desktop;
+	}
+	@include media($large) {
+		background-size: cover;
+		height: $header-large;
+	}
 	section {
 	   @include media($desktop) {
 	      @include span-columns(6);
 	      width: 50%;
 	    }
 		&.tagline {
+	      @include media($mobile) {
+			height: $tagline-mobile;
+			vertical-align: middle;
+			h3 {
+				color: $blue;
+				text-align: center;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				padding: .5em;
+			}
+	      }
 	      @include media($tablet) {
-	      	margin-top: 55%;
+	      	height: $tagline-tablet;
 	        @include span-columns(12);
 			h3 {
-				color: $red;
+				color: $blue;
 				text-align: center;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
 			}
 	      }
-	      @include media($mobile) {
-	      	margin-top: 55%;
-			h3 {
-				color: $red;
-				text-align: center;
-			}
-	      }
-
 	      @include media($desktop) {
 			@include span-columns(6);
 			@include shift(6);
@@ -47,5 +89,9 @@ body>header {
 
 		}
 	}
+}
 
+.header {
+	display: block;
+	min-height: 100px;
 }

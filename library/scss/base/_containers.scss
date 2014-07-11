@@ -47,13 +47,13 @@ body>footer {
   }
 }
 
-body>header {
-  @include outer-container;
-  max-height: 509px;
-   @include media($desktop) {
-    }
+// body>header {
+//   max-height: 509px;
+//    @include media($tablet) {
+//     @include outer-container;
+//    }
 
-}
+// }
 
 section {
   @include clearfix;

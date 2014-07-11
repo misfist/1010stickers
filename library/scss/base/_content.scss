@@ -44,12 +44,12 @@ section#order {
       @include shift(2);  
     }
     @include media($desktop) {
-      @include span-columns(6);
-      @include shift(3);  
+      @include span-columns(8);
+      @include shift(2);  
     }
 
     figure {
-      margin-bottom: 14%;
+      margin-bottom: 8%;
       img {
         width: 100%;
         max-width: 547px;
@@ -87,6 +87,11 @@ section#partners {
         @include span-columns(12);
         height: 110%;
         line-height: 110%;
+        padding-bottom: .75em;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
       }
       @include media($tablet) {
         @include span-columns(6);
@@ -101,6 +106,7 @@ section#partners {
         width: 100%;
         height: auto;
         vertical-align: middle;
+
 
         &.bfmw {
           max-width: 142px;
