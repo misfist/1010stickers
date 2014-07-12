@@ -44,10 +44,10 @@ require getcwd() .'/scripts/image-array.php';
             <article>
                 <h2><span>Partners</span></h2>
                 <ul class="partners">
-                    <li><img alt="Business for a Fair Minimum Wage logo" src="library/images/partners/logo_1.png" class="bfmw" /></li>
-                    <li><img alt="The Main Street Alliance logo" src="library/images/partners/logo_2.png" class="msa" /></li>
-                    <li><img alt="Smart Capitalists for American Prosperity log" src="library/images/partners/logo_3.png" class="scap" /></li>
-                    <li><img alt="Uncommon Goods logo" src="library/images/partners/logo_4.png" class="ug" /></li>
+                    <li class="partner-logo"><img alt="Business for a Fair Minimum Wage logo" src="library/images/partners/logo_1.png" class="bfmw" /></li>
+                    <li class="partner-logo"><img alt="The Main Street Alliance logo" src="library/images/partners/logo_2.png" class="msa" /></li>
+                    <li class="partner-logo"><img alt="Smart Capitalists for American Prosperity log" src="library/images/partners/logo_3.png" class="scap" /></li>
+                    <li class="partner-logo"><img alt="Uncommon Goods logo" src="library/images/partners/logo_4.png" class="ug" /></li>
                 </ul>
             </article>
         </section>
@@ -58,7 +58,7 @@ require getcwd() .'/scripts/image-array.php';
                   <?php $images = build_image_list(); ?>
                   <?php echo "$images"; ?>
                 </ul>
-                <p><a id="loadMore" class="button">Load more</a></p>
+                <p><a id="loadMore" class="button">Load More Images</a></p>
                 <p><a class="button">Submit a Photo</a></p>
             </article>
         </section>
