@@ -146,6 +146,9 @@ section#photos {
         @include span-columns(4);
         @include omega(3n);
       }
+      &.hidden {
+        display: none; // For JS image load
+      }
     }
   }
 }
