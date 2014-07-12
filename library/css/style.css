@@ -650,13 +650,39 @@ a.button {
     border-color: #0077bd;
     border-width: 2px;
     border-style: solid; }
+/* line 225, ../scss/base/_typography.scss */
+#photos a#loadMore,
+#intro a#loadMore {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  color: #0077bd;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border-color: #0077bd;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center; }
+  /* line 75, ../scss/base/_mixins.scss */
+  #photos a#loadMore:hover,
+  #intro a#loadMore:hover {
+    background-color: #d0d2d3;
+    color: #0077bd;
+    border-color: #0077bd;
+    border-width: 2px;
+    border-style: solid; }
 
-/* line 228, ../scss/base/_typography.scss */
+/* line 231, ../scss/base/_typography.scss */
 section h2 {
   border-bottom-color: #d0d2d3;
   border-bottom-width: 2px;
   border-bottom-style: solid; }
-  /* line 232, ../scss/base/_typography.scss */
+  /* line 235, ../scss/base/_typography.scss */
   section h2 span {
     display: block;
     float: left;

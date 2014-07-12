@@ -222,6 +222,9 @@ a.button {
     a.button {
         @include button($bordercolor: $red, $hovercolor: $blue, $hoverbackground: $white, $hoverborder: $blue);
     }
+    a#loadMore {
+        @include button($bordercolor: $blue, $hovercolor: $blue, $hoverbackground: $gray9, $hoverborder: $blue);
+    }
 }
 
 section {
