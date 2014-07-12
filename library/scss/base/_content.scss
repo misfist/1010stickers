@@ -87,7 +87,7 @@ section#partners {
         @include span-columns(12);
         height: 110%;
         line-height: 110%;
-        padding-bottom: .75em;
+        padding-bottom: em(30);
 
           &:last-child {
             padding-bottom: 0;

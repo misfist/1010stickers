@@ -226,21 +226,21 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 129, ../scss/base/_config.scss */
+/* line 134, ../scss/base/_config.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-/* line 174, ../scss/base/_config.scss */
+/* line 179, ../scss/base/_config.scss */
 .is-hidden {
   display: none; }
 
-/* line 178, ../scss/base/_config.scss */
+/* line 183, ../scss/base/_config.scss */
 .fullwidth {
   width: 100%; }
 
-/* line 187, ../scss/base/_config.scss */
+/* line 192, ../scss/base/_config.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -438,7 +438,7 @@ h3 {
     h3 {
       font-size: 24px;
       font-size: 1.5rem; } }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1020px) {
     /* line 97, ../scss/base/_typography.scss */
     h3 {
       font-size: 32px;
@@ -508,7 +508,7 @@ li, dt, dd {
     li, dt, dd {
       font-size: 18px;
       font-size: 1.125rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1020px) {
     /* line 156, ../scss/base/_typography.scss */
     li, dt, dd {
       font-size: 20px;
@@ -528,7 +528,7 @@ input, label, select, textarea {
     input, label, select, textarea {
       font-size: 18px;
       font-size: 1.125rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1020px) {
     /* line 163, ../scss/base/_typography.scss */
     input, label, select, textarea {
       font-size: 20px;
@@ -543,7 +543,7 @@ small {
     small {
       font-size: 12px;
       font-size: 0.75rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1020px) {
     /* line 172, ../scss/base/_typography.scss */
     small {
       font-size: 13px;
@@ -582,7 +582,7 @@ samp {
     samp {
       font-size: 18px;
       font-size: 1.125rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1020px) {
     /* line 201, ../scss/base/_typography.scss */
     code,
     kbd,
@@ -715,11 +715,11 @@ a:hover {
   color: #898e94;
   text-decoration: none; }
 
-/* line 15, ../scss/base/_header.scss */
+/* line 20, ../scss/base/_header.scss */
 body > header {
   background: url(../images/header.jpg) no-repeat top center;
   *zoom: 1;
-  min-height: 509px; }
+  min-height: 31.875em; }
   /* line 18, ../scss/bourbon/addons/_clearfix.scss */
   body > header:before, body > header:after {
     content: " ";
@@ -728,29 +728,29 @@ body > header {
   body > header:after {
     clear: both; }
   @media screen and (max-width: 480px) {
-    /* line 15, ../scss/base/_header.scss */
+    /* line 20, ../scss/base/_header.scss */
     body > header {
       background-size: 100%;
-      background-position: 0 140px;
-      height: 330px; } }
+      background-position: 0 9.375em;
+      height: 16.875em; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 15, ../scss/base/_header.scss */
+    /* line 20, ../scss/base/_header.scss */
     body > header {
       background-size: 100%;
-      background-position: 0 140px;
-      height: 375px; } }
+      background-position: 0 9.375em;
+      height: 21.375em; } }
   @media screen and (min-width: 768px) {
-    /* line 15, ../scss/base/_header.scss */
+    /* line 20, ../scss/base/_header.scss */
     body > header {
       background-size: 100%;
-      height: 509px; } }
-  @media screen and (min-width: 1025px) {
-    /* line 15, ../scss/base/_header.scss */
+      height: 31.875em; } }
+  @media screen and (min-width: 1020px) {
+    /* line 20, ../scss/base/_header.scss */
     body > header {
       background-size: cover;
-      height: 509px; } }
+      height: 31.875em; } }
   @media screen and (min-width: 768px) {
-    /* line 40, ../scss/base/_header.scss */
+    /* line 43, ../scss/base/_header.scss */
     body > header section {
       display: block;
       float: left;
@@ -761,24 +761,25 @@ body > header {
       body > header section:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
-    /* line 45, ../scss/base/_header.scss */
+    /* line 48, ../scss/base/_header.scss */
     body > header section.tagline {
-      height: 140px;
+      height: 9.375em;
       vertical-align: middle; }
-      /* line 49, ../scss/base/_header.scss */
+      /* line 52, ../scss/base/_header.scss */
       body > header section.tagline h3 {
         color: #0077bd;
+        font-family: "Lora", serif;
         text-align: center;
+        padding: .5em;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        padding: .5em; } }
+        -ms-transform: translateY(-50%); } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 45, ../scss/base/_header.scss */
+    /* line 48, ../scss/base/_header.scss */
     body > header section.tagline {
-      height: 140px;
+      height: 9.375em;
       display: block;
       float: left;
       margin-right: 2.35765%;
@@ -789,6 +790,7 @@ body > header {
       /* line 63, ../scss/base/_header.scss */
       body > header section.tagline h3 {
         color: #0077bd;
+        font-family: "Lora", serif;
         text-align: center;
         position: relative;
         top: 50%;
@@ -796,7 +798,7 @@ body > header {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%); } }
   @media screen and (min-width: 768px) {
-    /* line 45, ../scss/base/_header.scss */
+    /* line 48, ../scss/base/_header.scss */
     body > header section.tagline {
       display: block;
       float: left;
@@ -807,26 +809,25 @@ body > header {
       /* line 41, ../scss/neat/grid/_span-columns.scss */
       body > header section.tagline:last-child {
         margin-right: 0; }
-      /* line 77, ../scss/base/_header.scss */
+      /* line 74, ../scss/base/_header.scss */
       body > header section.tagline h3 {
         color: white; } }
-  @media screen and (min-width: 1025px) {
-    /* line 45, ../scss/base/_header.scss */
+  @media screen and (min-width: 1020px) {
+    /* line 48, ../scss/base/_header.scss */
     body > header section.tagline {
       display: block;
       float: left;
       margin-right: 2.35765%;
       width: 48.82117%;
-      margin-left: 51.17883%;
-      padding: 80px; }
+      margin-left: 51.17883%; }
       /* line 41, ../scss/neat/grid/_span-columns.scss */
       body > header section.tagline:last-child {
         margin-right: 0; }
-      /* line 85, ../scss/base/_header.scss */
+      /* line 83, ../scss/base/_header.scss */
       body > header section.tagline h3 {
         color: white; } }
 
-/* line 94, ../scss/base/_header.scss */
+/* line 92, ../scss/base/_header.scss */
 .header {
   display: block;
   min-height: 100px; }
@@ -1037,7 +1038,7 @@ section#partners {
           width: 100%;
           height: 110%;
           line-height: 110%;
-          padding-bottom: .75em; }
+          padding-bottom: 1.875em; }
           /* line 41, ../scss/neat/grid/_span-columns.scss */
           section#partners ul.partners li:last-child {
             margin-right: 0; }

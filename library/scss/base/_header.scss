@@ -1,33 +1,36 @@
 // HEADER
 
-// Header heights
-$header-large: 509px;
-$header-desktop: 509px;
-$header-tablet: 375px;
-$header-mobile: 330px;
+$imageheight: em(510);
+$imagewidth: em(1020);
 
 // Tagline height
 $tagline-large: 0;
 $tagline-desktop: 0;
-$tagline-tablet: 140px;
-$tagline-mobile: 140px;
+$tagline-tablet: em(150);
+$tagline-mobile: em(150);
+
+// Header heights
+$header-large: $imageheight;
+$header-desktop: $imageheight;
+// Attempt to set height proportionate to screen width for breakpoint
+$header-tablet: ((($desktopscreen/2)/$imagewidth)*$imageheight)+$tagline-tablet;
+// Attempt to set height proportionate to screen width for breakpoint
+$header-mobile:  ((($mobilescreen/2)/$imagewidth)*$imageheight)+$tagline-mobile;
 
 body>header {
 	background: url(../images/header.jpg) no-repeat top center;
 	@include clearfix;
-	min-height: 509px;
+	min-height: $imageheight;
 
 	@include media($mobile) {
 		background-size: 100%;
 		background-position: 0 $tagline-mobile;
 		height: $header-mobile;
-		// min-height: 300px;
 	}
 	@include media($tablet) {
 		background-size: 100%;
 		background-position: 0 $tagline-tablet;
 		height: $header-tablet;
-		// min-height: 300px;
 	}
 	@include media($desktop) {
 		background-size: 100%;
@@ -48,13 +51,10 @@ body>header {
 			vertical-align: middle;
 			h3 {
 				color: $blue;
+				font-family: $lora;
 				text-align: center;
-				position: relative;
-				top: 50%;
-				transform: translateY(-50%);
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
 				padding: .5em;
+				@include vertical-align;
 			}
 	      }
 	      @include media($tablet) {
@@ -62,12 +62,9 @@ body>header {
 	        @include span-columns(12);
 			h3 {
 				color: $blue;
+				font-family: $lora;
 				text-align: center;
-				position: relative;
-				top: 50%;
-				transform: translateY(-50%);
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
+				@include vertical-align;
 			}
 	      }
 	      @include media($desktop) {
@@ -76,12 +73,13 @@ body>header {
 			padding: 100px 60px;
 			h3 {
 				color: $white;
+
 			}
 	      }
 	      @include media($large) {
 			@include span-columns(6);
 			@include shift(6);
-			padding: 80px;
+			// padding: 80px;
 			h3 {
 				color: $white;
 			}

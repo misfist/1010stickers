@@ -113,14 +113,19 @@ $max-width: 1025px;
 		@media (min-width: 769px) { @content; }
 	}
 	@else if $point == large {
-		@media (min-width: 1025px) { @content; }
+		@media (min-width: 1020px) { @content; }
 	}
 }
+
+$mobilescreen: em(480);
+$tabletscreen: em(480 + 1);
+$desktopscreen: em(768);
+$largescreen: em(1020);
 
 $mobile: new-breakpoint(max-width 480px);
 $tablet: new-breakpoint(max-width 768px min-width 481px);
 $desktop: new-breakpoint(min-width 768px);
-$large: new-breakpoint(min-width 1025px);
+$large: new-breakpoint(min-width 1020px);
 
 
 // CLEARFIX
