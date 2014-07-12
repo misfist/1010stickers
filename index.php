@@ -11,6 +11,7 @@ require getcwd() .'/scripts/image-array.php';
 
     <link rel="stylesheet" href="library/css/style.css">
     <script src="library/jquery-1.11.1.js"></script>
+    <script src="library/more-photos.js"></script>
 </head>
 <body class="home">
 
@@ -55,21 +56,9 @@ require getcwd() .'/scripts/image-array.php';
                 <h2><span>Your Photos</span></h2>
                 <ul class="photos">
                   <?php $images = build_image_list(); ?>
-                  <?php print $images; ?>
-<!--                    <li class="business-photo"><img alt="Business Name" src="images/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li>
-                    <li class="business-photo"><img alt="Business Name" src="http://dummyimage.com/300x200/0eafff/ffffff.png" /></li> -->
+                  <?php echo "$images"; ?>
                 </ul>
-                <!-- <p id="loadMore">Load more</p> -->
+                <p><a id="loadMore" class="button">Load more</a></p>
                 <p><a class="button">Submit a Photo</a></p>
             </article>
         </section>
