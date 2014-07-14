@@ -6,85 +6,79 @@ $imagewidth: em(1020);
 // Tagline height
 $tagline-large: 0;
 $tagline-desktop: 0;
-$tagline-tablet: em(150);
+$tagline-tablet: em(120);
 $tagline-mobile: em(150);
 
 // Header heights
 $header-large: $imageheight;
 $header-desktop: $imageheight;
 // Attempt to set height proportionate to screen width for breakpoint
-$header-tablet: ((($desktopscreen/2)/$imagewidth)*$imageheight)+$tagline-tablet;
+$header-tablet: (($desktopscreen/$imagewidth)*$imageheight)+$tagline-tablet;
 // Attempt to set height proportionate to screen width for breakpoint
-$header-mobile:  ((($mobilescreen/2)/$imagewidth)*$imageheight)+$tagline-mobile;
+$header-mobile:  (($mobilescreen/$imagewidth)*$imageheight)+$tagline-mobile;
 
 body>header {
-	background: url(../images/header.jpg) no-repeat top center;
-	@include clearfix;
-	min-height: $imageheight;
+	background: url(../images/header.jpg) no-repeat;
+	background-size: 100%;
 
 	@include media($mobile) {
-		background-size: 100%;
-		background-position: 0 $tagline-mobile;
-		height: $header-mobile;
+		background-position: 0 $tagline-mobile + 2;
 	}
 	@include media($tablet) {
-		background-size: 100%;
-		background-position: 0 $tagline-tablet;
-		height: $header-tablet;
+		background-position: 0 $tagline-tablet + 2;
 	}
+
 	@include media($desktop) {
-		background-size: 100%;
-		height: $header-desktop;
+		// background-size: 100%;
+		background-position: 0 $tagline-mobile;
 	}
 	@include media($large) {
-		background-size: cover;
-		height: $header-large;
+		// background-size: 100%;
+		background-position: top center;
 	}
+
+	@include clearfix;
+	min-height: $imageheight;
+	
 	section {
-	   @include media($desktop) {
-	      @include span-columns(6);
-	      width: 50%;
-	    }
-		&.tagline {
-	      @include media($mobile) {
-			height: $tagline-mobile;
-			vertical-align: middle;
-			h3 {
-				color: $blue;
-				font-family: $lora;
-				text-align: center;
-				padding: .5em;
-				@include vertical-align;
-			}
-	      }
-	      @include media($tablet) {
-	      	height: $tagline-tablet;
-	        @include span-columns(12);
-			h3 {
-				color: $blue;
-				font-family: $lora;
-				text-align: center;
-				@include vertical-align;
-			}
-	      }
-	      @include media($desktop) {
-			@include span-columns(6);
-			@include shift(6);
-			padding: 100px 60px;
-			h3 {
-				color: $white;
-
-			}
-	      }
-	      @include media($large) {
-			@include span-columns(6);
-			@include shift(6);
-			// padding: 80px;
-			h3 {
-				color: $white;
-			}
-	      }
-
+		position: relative;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	h3 {
+		@include media($mobile) {
+			color: $blue;
+			font-family: $lora;
+			text-align: center;
+			height: $tagline-mobile + 2;
+			padding: 1.1em;
+		}
+		@include media($tablet) {
+			color: $blue;
+			font-family: $lora;
+			text-align: center;
+			height: $tagline-tablet;
+			padding: 1em;
+		}
+		@include media($desktop) {
+			position: inherit;
+			color: $blue;
+			font-family: $lora;
+			text-align: center;
+			height: $tagline-tablet;
+			padding: 1.2em;
+		}
+		@include media($large) {
+			width: 40%;
+			position: absolute;
+			top: 2em;
+			right: 2em;
+			color: $white;
+			font-family: $sans;
+			text-align: left;
+			height: auto;
 		}
 	}
 }

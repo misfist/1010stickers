@@ -12,8 +12,22 @@ ul {
 }
 
 section#intro {
-  padding-top: 60px;
+  @include clearfix;
+  // padding-top: 60px;
+  padding-top: 0;
   padding-bottom: 50px;
+  @include media($mobile) {
+    padding-top: 0;
+  }
+  @include media($tablet) {
+    padding-top: 0;
+  }
+  @include media($desktop) {
+    padding-top: 0;
+  }
+  @include media($large) {
+    padding-top: 60px;
+  }
   article {
     text-align: center;
     p {

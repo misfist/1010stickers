@@ -268,7 +268,9 @@ body > footer > section article {
   *zoom: 1;
   max-width: 1025px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-right: .5em;
+  padding-left: .5em; }
   /* line 18, ../scss/bourbon/addons/_clearfix.scss */
   body > header > section article:before, body > header > section article:after,
   body > main > section article:before,
@@ -282,21 +284,14 @@ body > footer > section article {
   body > main > section article:after,
   body > footer > section article:after {
     clear: both; }
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 1020px) {
     /* line 25, ../scss/base/_containers.scss */
     body > header > section article,
     body > main > section article,
     body > footer > section article {
-      padding-right: .5em;
-      padding-left: .5em; } }
-  @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 25, ../scss/base/_containers.scss */
-    body > header > section article,
-    body > main > section article,
-    body > footer > section article {
-      padding-right: .5em;
-      padding-left: .5em; } }
-/* line 36, ../scss/base/_containers.scss */
+      padding-right: 0;
+      padding-left: 0; } }
+/* line 35, ../scss/base/_containers.scss */
 body > header > section#footer,
 body > main > section#footer,
 body > footer > section#footer {
@@ -318,21 +313,21 @@ body > footer > section#footer {
   body > footer > section#footer:after {
     clear: both; }
   @media screen and (max-width: 480px) {
-    /* line 36, ../scss/base/_containers.scss */
+    /* line 35, ../scss/base/_containers.scss */
     body > header > section#footer,
     body > main > section#footer,
     body > footer > section#footer {
       padding-right: .5em;
       padding-left: .5em; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 36, ../scss/base/_containers.scss */
+    /* line 35, ../scss/base/_containers.scss */
     body > header > section#footer,
     body > main > section#footer,
     body > footer > section#footer {
       padding-right: .5em;
       padding-left: .5em; } }
 
-/* line 58, ../scss/base/_containers.scss */
+/* line 57, ../scss/base/_containers.scss */
 section {
   *zoom: 1; }
   /* line 18, ../scss/bourbon/addons/_clearfix.scss */
@@ -717,9 +712,26 @@ a:hover {
 
 /* line 20, ../scss/base/_header.scss */
 body > header {
-  background: url(../images/header.jpg) no-repeat top center;
+  background: url(../images/header.jpg) no-repeat;
+  background-size: 100%;
   *zoom: 1;
   min-height: 31.875em; }
+  @media screen and (max-width: 480px) {
+    /* line 20, ../scss/base/_header.scss */
+    body > header {
+      background-position: 0 11.375em; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    /* line 20, ../scss/base/_header.scss */
+    body > header {
+      background-position: 0 9.5em; } }
+  @media screen and (min-width: 768px) {
+    /* line 20, ../scss/base/_header.scss */
+    body > header {
+      background-position: 0 9.375em; } }
+  @media screen and (min-width: 1020px) {
+    /* line 20, ../scss/base/_header.scss */
+    body > header {
+      background-position: top center; } }
   /* line 18, ../scss/bourbon/addons/_clearfix.scss */
   body > header:before, body > header:after {
     content: " ";
@@ -727,107 +739,51 @@ body > header {
   /* line 23, ../scss/bourbon/addons/_clearfix.scss */
   body > header:after {
     clear: both; }
+  /* line 43, ../scss/base/_header.scss */
+  body > header section {
+    position: relative; }
+  /* line 46, ../scss/base/_header.scss */
+  body > header img {
+    width: 100%;
+    height: auto; }
   @media screen and (max-width: 480px) {
-    /* line 20, ../scss/base/_header.scss */
-    body > header {
-      background-size: 100%;
-      background-position: 0 9.375em;
-      height: 16.875em; } }
+    /* line 50, ../scss/base/_header.scss */
+    body > header h3 {
+      color: #0077bd;
+      font-family: "Lora", serif;
+      text-align: center;
+      height: 11.375em;
+      padding: 1.1em; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 20, ../scss/base/_header.scss */
-    body > header {
-      background-size: 100%;
-      background-position: 0 9.375em;
-      height: 21.375em; } }
+    /* line 50, ../scss/base/_header.scss */
+    body > header h3 {
+      color: #0077bd;
+      font-family: "Lora", serif;
+      text-align: center;
+      height: 7.5em;
+      padding: 1em; } }
   @media screen and (min-width: 768px) {
-    /* line 20, ../scss/base/_header.scss */
-    body > header {
-      background-size: 100%;
-      height: 31.875em; } }
+    /* line 50, ../scss/base/_header.scss */
+    body > header h3 {
+      position: inherit;
+      color: #0077bd;
+      font-family: "Lora", serif;
+      text-align: center;
+      height: 7.5em;
+      padding: 1.2em; } }
   @media screen and (min-width: 1020px) {
-    /* line 20, ../scss/base/_header.scss */
-    body > header {
-      background-size: cover;
-      height: 31.875em; } }
-  @media screen and (min-width: 768px) {
-    /* line 43, ../scss/base/_header.scss */
-    body > header section {
-      display: block;
-      float: left;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      width: 50%; }
-      /* line 41, ../scss/neat/grid/_span-columns.scss */
-      body > header section:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 480px) {
-    /* line 48, ../scss/base/_header.scss */
-    body > header section.tagline {
-      height: 9.375em;
-      vertical-align: middle; }
-      /* line 52, ../scss/base/_header.scss */
-      body > header section.tagline h3 {
-        color: #0077bd;
-        font-family: "Lora", serif;
-        text-align: center;
-        padding: .5em;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%); } }
-  @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 48, ../scss/base/_header.scss */
-    body > header section.tagline {
-      height: 9.375em;
-      display: block;
-      float: left;
-      margin-right: 2.35765%;
-      width: 100%; }
-      /* line 41, ../scss/neat/grid/_span-columns.scss */
-      body > header section.tagline:last-child {
-        margin-right: 0; }
-      /* line 63, ../scss/base/_header.scss */
-      body > header section.tagline h3 {
-        color: #0077bd;
-        font-family: "Lora", serif;
-        text-align: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%); } }
-  @media screen and (min-width: 768px) {
-    /* line 48, ../scss/base/_header.scss */
-    body > header section.tagline {
-      display: block;
-      float: left;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 51.17883%;
-      padding: 100px 60px; }
-      /* line 41, ../scss/neat/grid/_span-columns.scss */
-      body > header section.tagline:last-child {
-        margin-right: 0; }
-      /* line 74, ../scss/base/_header.scss */
-      body > header section.tagline h3 {
-        color: white; } }
-  @media screen and (min-width: 1020px) {
-    /* line 48, ../scss/base/_header.scss */
-    body > header section.tagline {
-      display: block;
-      float: left;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 51.17883%; }
-      /* line 41, ../scss/neat/grid/_span-columns.scss */
-      body > header section.tagline:last-child {
-        margin-right: 0; }
-      /* line 83, ../scss/base/_header.scss */
-      body > header section.tagline h3 {
-        color: white; } }
+    /* line 50, ../scss/base/_header.scss */
+    body > header h3 {
+      width: 40%;
+      position: absolute;
+      top: 2em;
+      right: 2em;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: left;
+      height: auto; } }
 
-/* line 92, ../scss/base/_header.scss */
+/* line 86, ../scss/base/_header.scss */
 .header {
   display: block;
   min-height: 100px; }
@@ -924,32 +880,56 @@ ul {
 
 /* line 14, ../scss/base/_content.scss */
 section#intro {
-  padding-top: 60px;
+  *zoom: 1;
+  padding-top: 0;
   padding-bottom: 50px; }
-  /* line 17, ../scss/base/_content.scss */
+  /* line 18, ../scss/bourbon/addons/_clearfix.scss */
+  section#intro:before, section#intro:after {
+    content: " ";
+    display: table; }
+  /* line 23, ../scss/bourbon/addons/_clearfix.scss */
+  section#intro:after {
+    clear: both; }
+  @media screen and (max-width: 480px) {
+    /* line 14, ../scss/base/_content.scss */
+    section#intro {
+      padding-top: 0; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    /* line 14, ../scss/base/_content.scss */
+    section#intro {
+      padding-top: 0; } }
+  @media screen and (min-width: 768px) {
+    /* line 14, ../scss/base/_content.scss */
+    section#intro {
+      padding-top: 0; } }
+  @media screen and (min-width: 1020px) {
+    /* line 14, ../scss/base/_content.scss */
+    section#intro {
+      padding-top: 60px; } }
+  /* line 31, ../scss/base/_content.scss */
   section#intro article {
     text-align: center; }
-    /* line 19, ../scss/base/_content.scss */
+    /* line 33, ../scss/base/_content.scss */
     section#intro article p {
       margin-bottom: 40px; }
-      /* line 21, ../scss/base/_content.scss */
+      /* line 35, ../scss/base/_content.scss */
       section#intro article p:nth-child(2) {
         color: #d0112b; }
 
-/* line 28, ../scss/base/_content.scss */
+/* line 42, ../scss/base/_content.scss */
 section#order {
   padding-top: 70px;
   padding-bottom: 54px;
   background: #0077bd; }
-  /* line 32, ../scss/base/_content.scss */
+  /* line 46, ../scss/base/_content.scss */
   section#order p {
     text-align: center;
     color: white; }
-  /* line 36, ../scss/base/_content.scss */
+  /* line 50, ../scss/base/_content.scss */
   section#order .images {
     text-align: center; }
     @media screen and (max-width: 480px) {
-      /* line 36, ../scss/base/_content.scss */
+      /* line 50, ../scss/base/_content.scss */
       section#order .images {
         display: block;
         float: left;
@@ -959,7 +939,7 @@ section#order {
         section#order .images:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 768px) and (min-width: 481px) {
-      /* line 36, ../scss/base/_content.scss */
+      /* line 50, ../scss/base/_content.scss */
       section#order .images {
         display: block;
         float: left;
@@ -970,7 +950,7 @@ section#order {
         section#order .images:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
-      /* line 36, ../scss/base/_content.scss */
+      /* line 50, ../scss/base/_content.scss */
       section#order .images {
         display: block;
         float: left;
@@ -980,15 +960,15 @@ section#order {
         /* line 41, ../scss/neat/grid/_span-columns.scss */
         section#order .images:last-child {
           margin-right: 0; } }
-    /* line 51, ../scss/base/_content.scss */
+    /* line 65, ../scss/base/_content.scss */
     section#order .images figure {
       margin-bottom: 8%; }
-      /* line 53, ../scss/base/_content.scss */
+      /* line 67, ../scss/base/_content.scss */
       section#order .images figure img {
         width: 100%;
         max-width: 547px;
         height: auto; }
-    /* line 59, ../scss/base/_content.scss */
+    /* line 73, ../scss/base/_content.scss */
     section#order .images div.caption {
       text-align: center;
       width: 48%;
@@ -1000,14 +980,14 @@ section#order {
       text-transform: uppercase;
       color: #001689; }
 
-/* line 73, ../scss/base/_content.scss */
+/* line 87, ../scss/base/_content.scss */
 section#partners {
   padding-top: 70px; }
   @media screen and (max-width: 480px) {
-    /* line 73, ../scss/base/_content.scss */
+    /* line 87, ../scss/base/_content.scss */
     section#partners {
       padding-top: 30px; } }
-  /* line 78, ../scss/base/_content.scss */
+  /* line 92, ../scss/base/_content.scss */
   section#partners ul.partners {
     *zoom: 1;
     display: block;
@@ -1025,12 +1005,12 @@ section#partners {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     section#partners ul.partners:last-child {
       margin-right: 0; }
-    /* line 82, ../scss/base/_content.scss */
+    /* line 96, ../scss/base/_content.scss */
     section#partners ul.partners li {
       height: 142px;
       line-height: 142px; }
       @media screen and (max-width: 480px) {
-        /* line 82, ../scss/base/_content.scss */
+        /* line 96, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
@@ -1042,11 +1022,11 @@ section#partners {
           /* line 41, ../scss/neat/grid/_span-columns.scss */
           section#partners ul.partners li:last-child {
             margin-right: 0; }
-          /* line 92, ../scss/base/_content.scss */
+          /* line 106, ../scss/base/_content.scss */
           section#partners ul.partners li:last-child {
             padding-bottom: 0; } }
       @media screen and (max-width: 768px) and (min-width: 481px) {
-        /* line 82, ../scss/base/_content.scss */
+        /* line 96, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
@@ -1062,7 +1042,7 @@ section#partners {
           section#partners ul.partners li:nth-child(2n+1) {
             clear: left; } }
       @media screen and (min-width: 768px) {
-        /* line 82, ../scss/base/_content.scss */
+        /* line 96, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
@@ -1077,29 +1057,29 @@ section#partners {
           /* line 75, ../scss/neat/grid/_omega.scss */
           section#partners ul.partners li:nth-child(4n+1) {
             clear: left; } }
-      /* line 105, ../scss/base/_content.scss */
+      /* line 119, ../scss/base/_content.scss */
       section#partners ul.partners li img {
         width: 100%;
         height: auto;
         vertical-align: middle; }
-        /* line 111, ../scss/base/_content.scss */
+        /* line 125, ../scss/base/_content.scss */
         section#partners ul.partners li img.bfmw {
           max-width: 142px; }
-        /* line 114, ../scss/base/_content.scss */
+        /* line 128, ../scss/base/_content.scss */
         section#partners ul.partners li img.msa {
           max-width: 195px; }
-        /* line 117, ../scss/base/_content.scss */
+        /* line 131, ../scss/base/_content.scss */
         section#partners ul.partners li img.scap {
           max-width: 214px; }
-        /* line 120, ../scss/base/_content.scss */
+        /* line 134, ../scss/base/_content.scss */
         section#partners ul.partners li img.ug {
           max-width: 200px; }
 
-/* line 129, ../scss/base/_content.scss */
+/* line 143, ../scss/base/_content.scss */
 section#photos {
   text-align: center;
   padding-bottom: 82px; }
-  /* line 132, ../scss/base/_content.scss */
+  /* line 146, ../scss/base/_content.scss */
   section#photos ul {
     *zoom: 1;
     padding-top: 40px;
@@ -1113,7 +1093,7 @@ section#photos {
     section#photos ul:after {
       clear: both; }
     @media screen and (max-width: 480px) {
-      /* line 137, ../scss/base/_content.scss */
+      /* line 151, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1123,7 +1103,7 @@ section#photos {
         section#photos ul li:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 768px) and (min-width: 481px) {
-      /* line 137, ../scss/base/_content.scss */
+      /* line 151, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1139,7 +1119,7 @@ section#photos {
         section#photos ul li:nth-child(2n+1) {
           clear: left; } }
     @media screen and (min-width: 768px) {
-      /* line 137, ../scss/base/_content.scss */
+      /* line 151, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1154,6 +1134,6 @@ section#photos {
         /* line 75, ../scss/neat/grid/_omega.scss */
         section#photos ul li:nth-child(3n+1) {
           clear: left; } }
-    /* line 149, ../scss/base/_content.scss */
+    /* line 163, ../scss/base/_content.scss */
     section#photos ul li.hidden {
       display: none; }

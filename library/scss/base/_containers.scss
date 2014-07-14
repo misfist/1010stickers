@@ -24,15 +24,14 @@ body>footer {
     &>section {
       article {
          @include outer-container;
-          @include media($mobile) {
             padding-right: .5em;
             padding-left: .5em;
-          }
-          @include media($tablet) {
-            padding-right: .5em;
-            padding-left: .5em;
-          }
-      }
+
+          @include media($large) {
+            padding-right: 0;
+            padding-left: 0;
+          } 
+        }
       &#footer {
         @include outer-container;
         @include media($mobile) {
