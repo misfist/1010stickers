@@ -1,5 +1,5 @@
 <?php
-require getcwd() .'/scripts/image-array.php';
+require getcwd() .'/library/scripts/image-array.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,8 +10,8 @@ require getcwd() .'/scripts/image-array.php';
     <title>$10.10 Minimum Wage Sticker</title>
 
     <link rel="stylesheet" href="library/css/style.css">
-    <script src="library/jquery-1.11.1.js"></script>
-    <script src="library/more-photos.js"></script>
+    <script src="library/js/jquery-1.11.1.js"></script>
+    <script src="library/js/more-photos.js"></script>
 </head>
 <body class="home">
 
@@ -19,6 +19,7 @@ require getcwd() .'/scripts/image-array.php';
         <section class="tagline">
             <h3>We are business people that support a federal minimum wage of at least $10.10 an hour that adjusts annually with the rising cost of living.</h3>
         </section>
+        <img alt="" src="library/images/transparent.png" id="placeholder" />
     </header>
     <main class="content">
         <section id="intro">
@@ -30,13 +31,13 @@ require getcwd() .'/scripts/image-array.php';
         </section>
         <section id="order">
             <article class="intro">
-
                 <div class="images">
                     <figure>
                         <img alt="This business supports $10.10 minimum wage poster" src="library/images/poster_decal.png" />
                     </figure>
 
                 </div>
+
                 <p><a class="button">Order Free Today</a></p>
             </article>
        </section>
@@ -58,6 +59,7 @@ require getcwd() .'/scripts/image-array.php';
                   <?php $images = build_image_list(); ?>
                   <?php echo "$images"; ?>
                 </ul>
+                
                 <p><a id="loadMore" class="button">Load More Images</a></p>
                 <p><a class="button">Submit a Photo</a></p>
             </article>
