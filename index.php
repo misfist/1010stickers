@@ -1,5 +1,5 @@
 <?php
-require getcwd() .'/scripts/image-array.php';
+require getcwd() .'/library/scripts/image-array.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,8 +10,8 @@ require getcwd() .'/scripts/image-array.php';
     <title>$10.10 Minimum Wage Sticker</title>
 
     <link rel="stylesheet" href="library/css/style.css">
-    <script src="library/jquery-1.11.1.js"></script>
-    <script src="library/more-photos.js"></script>
+    <script src="library/js/jquery-1.11.1.js"></script>
+    <script src="library/js/more-photos.js"></script>
 </head>
 <body class="home">
 
