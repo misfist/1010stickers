@@ -20,6 +20,7 @@ $header-mobile:  (($mobilescreen/$imagewidth)*$imageheight)+$tagline-mobile;
 body>header {
 	background: url(../images/header.jpg) no-repeat;
 	background-size: 100%;
+	
 
 	@include media($mobile) {
 		background-position: 0 $tagline-mobile + 2;
@@ -28,18 +29,35 @@ body>header {
 		background-position: 0 $tagline-tablet + 2;
 	}
 	@include media($desktop) {
-		// background-size: 100%;
 		background-position: top center;
 		max-height: 510px;
 		overflow: hidden;
+		background-color: $gray2;
 	}
-	// @include media($large) {}
+	@include media($large) {
+		background-size: 1020px;
+	}
 
 	@include clearfix;
 	min-height: $imageheight;
 	
 	section {
-		position: relative;
+		@include media($desktop) {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: $imagewidth - em(100);
+			margin-left: -(($imagewidth - em(100))/2); /* Half the width */
+			height: $imageheight;
+		}
+		@include media($large) {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: $imagewidth;
+			margin-left: -(($imagewidth)/2); /* Half the width */
+			height: $imageheight;
+		}
 	}
 	img {
 		width: 100%;
@@ -61,16 +79,15 @@ body>header {
 			padding: 1em;
 		}
 		@include media($desktop) {
-			width: 40%;
-			position: absolute;
-			top: 2em;
-			right: 2em;
+			@include span-columns(6);
 			color: $white;
 			font-family: $sans;
-			text-align: left;
-			height: auto;
+			@include shift(6);
+			padding: 3em;
 		}
-		// @include media($large) {}
+		@include media($large) {
+			padding: 2em;
+		}
 	}
 }
 
