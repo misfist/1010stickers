@@ -124,7 +124,7 @@ h4 {
     }
 }
 
-p{
+p {
     @include media($mobile) {
         @include font-size($body-size-s);
     }
