@@ -27,15 +27,13 @@ body>header {
 	@include media($tablet) {
 		background-position: 0 $tagline-tablet + 2;
 	}
-
 	@include media($desktop) {
 		// background-size: 100%;
-		background-position: 0 $tagline-mobile;
-	}
-	@include media($large) {
-		// background-size: 100%;
 		background-position: top center;
+		max-height: 510px;
+		overflow: hidden;
 	}
+	// @include media($large) {}
 
 	@include clearfix;
 	min-height: $imageheight;
@@ -63,14 +61,6 @@ body>header {
 			padding: 1em;
 		}
 		@include media($desktop) {
-			position: inherit;
-			color: $blue;
-			font-family: $lora;
-			text-align: center;
-			height: $tagline-tablet;
-			padding: 1.2em;
-		}
-		@include media($large) {
 			width: 40%;
 			position: absolute;
 			top: 2em;
@@ -80,6 +70,7 @@ body>header {
 			text-align: left;
 			height: auto;
 		}
+		// @include media($large) {}
 	}
 }
 

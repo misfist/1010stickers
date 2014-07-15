@@ -23,10 +23,9 @@ section#intro {
     padding-top: 0;
   }
   @include media($desktop) {
-    padding-top: 0;
+    padding-top: 60px;
   }
   @include media($large) {
-    padding-top: 60px;
   }
   article {
     text-align: center;
