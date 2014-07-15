@@ -14,13 +14,13 @@ body>footer {
         
         @include word-wrap;
     }
-    div {
+    h4 {
         @include clearfix;
         &.footer-nav {
             margin: 18px 0;
-            a {
-                font-weight: 800;
-            }
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $gray6;
         }        
     }
     ul li {

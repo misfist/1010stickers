@@ -7,7 +7,7 @@ require getcwd() .'/library/scripts/image-array.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>$10.10 Minimum Wage Sticker</title>
+    <title>Order a $10.10 Minimum Wage Sticker</title>
 
     <link rel="stylesheet" href="library/css/style.css">
     <script src="library/js/jquery-1.11.1.js"></script>
@@ -68,7 +68,7 @@ require getcwd() .'/library/scripts/image-array.php';
     <footer class="footer">
         <section id="footer">
             <div class="copyright">2014. All Rights Reserved. Brought to you by Business for a Fair Minimum Wage, The Main Street Alliance, Smart Capitalists for American Prosperity, and orders fulfilled by UncommonGoods.</div>
-            <div class="footer-nav"><a href="">Contact Us</a></div>
+            <div class="footer-nav">Contact Us</div>
             <ul class="contacts">
                 <li>
                     <p><strong>Business for a Fair Minimum Wage</strong></p>
