@@ -13,20 +13,16 @@ ul {
 
 section#intro {
   @include clearfix;
-  // padding-top: 60px;
-  padding-top: 0;
-  padding-bottom: 50px;
+  padding-top: em(60);
+  padding-bottom: em(50);
   @include media($mobile) {
-    padding-top: 0;
+    padding-top: em(30);
   }
   @include media($tablet) {
-    padding-top: 0;
+    padding-top: em(40);
   }
-  @include media($desktop) {
-    padding-top: 60px;
-  }
-  @include media($large) {
-  }
+  @include media($desktop) {}
+  @include media($large) {}
   article {
     text-align: center;
     p {
@@ -65,7 +61,7 @@ section#order {
       margin-bottom: 8%;
       img {
         width: 100%;
-        max-width: 547px;
+        max-width: em(547);
         height: auto;
       }
     }

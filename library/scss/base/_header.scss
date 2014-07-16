@@ -3,32 +3,11 @@
 $imageheight: em(510);
 $imagewidth: em(1020);
 
-// Tagline height
-$tagline-large: 0;
-$tagline-desktop: 0;
-$tagline-tablet: em(120);
-$tagline-mobile: em(150);
-
-// Header heights
-$header-large: $imageheight;
-$header-desktop: $imageheight;
-// Attempt to set height proportionate to screen width for breakpoint
-$header-tablet: (($desktopscreen/$imagewidth)*$imageheight)+$tagline-tablet;
-// Attempt to set height proportionate to screen width for breakpoint
-$header-mobile:  (($mobilescreen/$imagewidth)*$imageheight)+$tagline-mobile;
-
 body>header {
-	background: url(../images/header.jpg) no-repeat;
-	background-size: 100%;
 	
-
-	@include media($mobile) {
-		background-position: 0 $tagline-mobile + 2;
-	}
-	@include media($tablet) {
-		background-position: 0 $tagline-tablet + 2;
-	}
 	@include media($desktop) {
+		background: url(../images/header.jpg) no-repeat;
+		background-size: 100%;
 		background-position: top center;
 		max-height: 510px;
 		overflow: hidden;
@@ -58,36 +37,44 @@ body>header {
 			margin-left: -(($imagewidth)/2); /* Half the width */
 			height: $imageheight;
 		}
+		h3 {
+			@include media($mobile) {
+				color: $blue;
+				font-family: $lora;
+				text-align: center;
+				padding: 1.1em;
+			}
+			@include media($tablet) {
+				color: $blue;
+				font-family: $lora;
+				text-align: center;
+				padding: 1em;
+			}
+			@include media($desktop) {
+				@include span-columns(6);
+				color: $white;
+				font-family: $sans;
+				@include shift(6);
+				padding: 3em;
+			}
+			@include media($large) {
+				padding: 2em;
+			}
+		}
+	}
+	div.background-image {
+		@include media($mobile) {
+			background: url(../images/header.jpg) no-repeat;
+			background-size: 100%;
+		}
+		@include media($tablet) {
+			background: url(../images/header.jpg) no-repeat;
+			background-size: 100%;
+		}
 	}
 	img {
 		width: 100%;
 		height: auto;
-	}
-	h3 {
-		@include media($mobile) {
-			color: $blue;
-			font-family: $lora;
-			text-align: center;
-			height: $tagline-mobile + 2;
-			padding: 1.1em;
-		}
-		@include media($tablet) {
-			color: $blue;
-			font-family: $lora;
-			text-align: center;
-			height: $tagline-tablet;
-			padding: 1em;
-		}
-		@include media($desktop) {
-			@include span-columns(6);
-			color: $white;
-			font-family: $sans;
-			@include shift(6);
-			padding: 3em;
-		}
-		@include media($large) {
-			padding: 2em;
-		}
 	}
 }
 

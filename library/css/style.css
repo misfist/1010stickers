@@ -710,28 +710,20 @@ a:hover {
   color: #898e94;
   text-decoration: none; }
 
-/* line 20, ../scss/base/_header.scss */
+/* line 6, ../scss/base/_header.scss */
 body > header {
-  background: url(../images/header.jpg) no-repeat;
-  background-size: 100%;
   *zoom: 1;
   min-height: 31.875em; }
-  @media screen and (max-width: 480px) {
-    /* line 20, ../scss/base/_header.scss */
-    body > header {
-      background-position: 0 11.375em; } }
-  @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 20, ../scss/base/_header.scss */
-    body > header {
-      background-position: 0 9.5em; } }
   @media screen and (min-width: 768px) {
-    /* line 20, ../scss/base/_header.scss */
+    /* line 6, ../scss/base/_header.scss */
     body > header {
+      background: url(../images/header.jpg) no-repeat;
+      background-size: 100%;
       background-position: top center;
       max-height: 510px;
       overflow: hidden; } }
   @media screen and (min-width: 1020px) {
-    /* line 20, ../scss/base/_header.scss */
+    /* line 6, ../scss/base/_header.scss */
     body > header {
       background-size: 1020px;
       background-color: #0a2153; } }
@@ -743,7 +735,7 @@ body > header {
   body > header:after {
     clear: both; }
   @media screen and (min-width: 768px) {
-    /* line 44, ../scss/base/_header.scss */
+    /* line 23, ../scss/base/_header.scss */
     body > header section {
       position: absolute;
       top: 0;
@@ -753,7 +745,7 @@ body > header {
       /* Half the width */
       height: 31.875em; } }
   @media screen and (min-width: 1020px) {
-    /* line 44, ../scss/base/_header.scss */
+    /* line 23, ../scss/base/_header.scss */
     body > header section {
       position: absolute;
       top: 0;
@@ -762,29 +754,23 @@ body > header {
       margin-left: -31.875em;
       /* Half the width */
       height: 31.875em; } }
-  /* line 62, ../scss/base/_header.scss */
-  body > header img {
-    width: 100%;
-    height: auto; }
   @media screen and (max-width: 480px) {
-    /* line 66, ../scss/base/_header.scss */
-    body > header h3 {
+    /* line 40, ../scss/base/_header.scss */
+    body > header section h3 {
       color: #0077bd;
       font-family: "Lora", serif;
       text-align: center;
-      height: 11.375em;
       padding: 1.1em; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* line 66, ../scss/base/_header.scss */
-    body > header h3 {
+    /* line 40, ../scss/base/_header.scss */
+    body > header section h3 {
       color: #0077bd;
       font-family: "Lora", serif;
       text-align: center;
-      height: 7.5em;
       padding: 1em; } }
   @media screen and (min-width: 768px) {
-    /* line 66, ../scss/base/_header.scss */
-    body > header h3 {
+    /* line 40, ../scss/base/_header.scss */
+    body > header section h3 {
       display: block;
       float: left;
       margin-right: 2.35765%;
@@ -794,14 +780,28 @@ body > header {
       margin-left: 51.17883%;
       padding: 3em; }
       /* line 41, ../scss/neat/grid/_span-columns.scss */
-      body > header h3:last-child {
+      body > header section h3:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1020px) {
-    /* line 66, ../scss/base/_header.scss */
-    body > header h3 {
+    /* line 40, ../scss/base/_header.scss */
+    body > header section h3 {
       padding: 2em; } }
+  @media screen and (max-width: 480px) {
+    /* line 65, ../scss/base/_header.scss */
+    body > header div.background-image {
+      background: url(../images/header.jpg) no-repeat;
+      background-size: 100%; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    /* line 65, ../scss/base/_header.scss */
+    body > header div.background-image {
+      background: url(../images/header.jpg) no-repeat;
+      background-size: 100%; } }
+  /* line 75, ../scss/base/_header.scss */
+  body > header img {
+    width: 100%;
+    height: auto; }
 
-/* line 94, ../scss/base/_header.scss */
+/* line 81, ../scss/base/_header.scss */
 .header {
   display: block;
   min-height: 100px; }
@@ -899,8 +899,8 @@ ul {
 /* line 14, ../scss/base/_content.scss */
 section#intro {
   *zoom: 1;
-  padding-top: 0;
-  padding-bottom: 50px; }
+  padding-top: 3.75em;
+  padding-bottom: 3.125em; }
   /* line 18, ../scss/bourbon/addons/_clearfix.scss */
   section#intro:before, section#intro:after {
     content: " ";
@@ -911,39 +911,35 @@ section#intro {
   @media screen and (max-width: 480px) {
     /* line 14, ../scss/base/_content.scss */
     section#intro {
-      padding-top: 0; } }
+      padding-top: 1.875em; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     /* line 14, ../scss/base/_content.scss */
     section#intro {
-      padding-top: 0; } }
-  @media screen and (min-width: 768px) {
-    /* line 14, ../scss/base/_content.scss */
-    section#intro {
-      padding-top: 60px; } }
-  /* line 30, ../scss/base/_content.scss */
+      padding-top: 2.5em; } }
+  /* line 26, ../scss/base/_content.scss */
   section#intro article {
     text-align: center; }
-    /* line 32, ../scss/base/_content.scss */
+    /* line 28, ../scss/base/_content.scss */
     section#intro article p {
       margin-bottom: 40px; }
-      /* line 34, ../scss/base/_content.scss */
+      /* line 30, ../scss/base/_content.scss */
       section#intro article p:nth-child(2) {
         color: #d0112b; }
 
-/* line 41, ../scss/base/_content.scss */
+/* line 37, ../scss/base/_content.scss */
 section#order {
   padding-top: 70px;
   padding-bottom: 54px;
   background: #0077bd; }
-  /* line 45, ../scss/base/_content.scss */
+  /* line 41, ../scss/base/_content.scss */
   section#order p {
     text-align: center;
     color: white; }
-  /* line 49, ../scss/base/_content.scss */
+  /* line 45, ../scss/base/_content.scss */
   section#order .images {
     text-align: center; }
     @media screen and (max-width: 480px) {
-      /* line 49, ../scss/base/_content.scss */
+      /* line 45, ../scss/base/_content.scss */
       section#order .images {
         display: block;
         float: left;
@@ -953,7 +949,7 @@ section#order {
         section#order .images:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 768px) and (min-width: 481px) {
-      /* line 49, ../scss/base/_content.scss */
+      /* line 45, ../scss/base/_content.scss */
       section#order .images {
         display: block;
         float: left;
@@ -964,7 +960,7 @@ section#order {
         section#order .images:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
-      /* line 49, ../scss/base/_content.scss */
+      /* line 45, ../scss/base/_content.scss */
       section#order .images {
         display: block;
         float: left;
@@ -974,15 +970,15 @@ section#order {
         /* line 41, ../scss/neat/grid/_span-columns.scss */
         section#order .images:last-child {
           margin-right: 0; } }
-    /* line 64, ../scss/base/_content.scss */
+    /* line 60, ../scss/base/_content.scss */
     section#order .images figure {
       margin-bottom: 8%; }
-      /* line 66, ../scss/base/_content.scss */
+      /* line 62, ../scss/base/_content.scss */
       section#order .images figure img {
         width: 100%;
-        max-width: 547px;
+        max-width: 34.1875em;
         height: auto; }
-    /* line 72, ../scss/base/_content.scss */
+    /* line 68, ../scss/base/_content.scss */
     section#order .images div.caption {
       text-align: center;
       width: 48%;
@@ -994,14 +990,14 @@ section#order {
       text-transform: uppercase;
       color: #001689; }
 
-/* line 86, ../scss/base/_content.scss */
+/* line 82, ../scss/base/_content.scss */
 section#partners {
   padding-top: 70px; }
   @media screen and (max-width: 480px) {
-    /* line 86, ../scss/base/_content.scss */
+    /* line 82, ../scss/base/_content.scss */
     section#partners {
       padding-top: 30px; } }
-  /* line 91, ../scss/base/_content.scss */
+  /* line 87, ../scss/base/_content.scss */
   section#partners ul.partners {
     *zoom: 1;
     display: block;
@@ -1019,12 +1015,12 @@ section#partners {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     section#partners ul.partners:last-child {
       margin-right: 0; }
-    /* line 95, ../scss/base/_content.scss */
+    /* line 91, ../scss/base/_content.scss */
     section#partners ul.partners li {
       height: 142px;
       line-height: 142px; }
       @media screen and (max-width: 480px) {
-        /* line 95, ../scss/base/_content.scss */
+        /* line 91, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
@@ -1036,11 +1032,11 @@ section#partners {
           /* line 41, ../scss/neat/grid/_span-columns.scss */
           section#partners ul.partners li:last-child {
             margin-right: 0; }
-          /* line 105, ../scss/base/_content.scss */
+          /* line 101, ../scss/base/_content.scss */
           section#partners ul.partners li:last-child {
             padding-bottom: 0; } }
       @media screen and (max-width: 768px) and (min-width: 481px) {
-        /* line 95, ../scss/base/_content.scss */
+        /* line 91, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
@@ -1056,7 +1052,7 @@ section#partners {
           section#partners ul.partners li:nth-child(2n+1) {
             clear: left; } }
       @media screen and (min-width: 768px) {
-        /* line 95, ../scss/base/_content.scss */
+        /* line 91, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
@@ -1071,29 +1067,29 @@ section#partners {
           /* line 75, ../scss/neat/grid/_omega.scss */
           section#partners ul.partners li:nth-child(4n+1) {
             clear: left; } }
-      /* line 118, ../scss/base/_content.scss */
+      /* line 114, ../scss/base/_content.scss */
       section#partners ul.partners li img {
         width: 100%;
         height: auto;
         vertical-align: middle; }
-        /* line 124, ../scss/base/_content.scss */
+        /* line 120, ../scss/base/_content.scss */
         section#partners ul.partners li img.bfmw {
           max-width: 142px; }
-        /* line 127, ../scss/base/_content.scss */
+        /* line 123, ../scss/base/_content.scss */
         section#partners ul.partners li img.msa {
           max-width: 195px; }
-        /* line 130, ../scss/base/_content.scss */
+        /* line 126, ../scss/base/_content.scss */
         section#partners ul.partners li img.scap {
           max-width: 214px; }
-        /* line 133, ../scss/base/_content.scss */
+        /* line 129, ../scss/base/_content.scss */
         section#partners ul.partners li img.ug {
           max-width: 200px; }
 
-/* line 142, ../scss/base/_content.scss */
+/* line 138, ../scss/base/_content.scss */
 section#photos {
   text-align: center;
   padding-bottom: 82px; }
-  /* line 145, ../scss/base/_content.scss */
+  /* line 141, ../scss/base/_content.scss */
   section#photos ul {
     *zoom: 1;
     padding-top: 40px;
@@ -1107,7 +1103,7 @@ section#photos {
     section#photos ul:after {
       clear: both; }
     @media screen and (max-width: 480px) {
-      /* line 150, ../scss/base/_content.scss */
+      /* line 146, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1117,7 +1113,7 @@ section#photos {
         section#photos ul li:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 768px) and (min-width: 481px) {
-      /* line 150, ../scss/base/_content.scss */
+      /* line 146, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1133,7 +1129,7 @@ section#photos {
         section#photos ul li:nth-child(2n+1) {
           clear: left; } }
     @media screen and (min-width: 768px) {
-      /* line 150, ../scss/base/_content.scss */
+      /* line 146, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1148,6 +1144,6 @@ section#photos {
         /* line 75, ../scss/neat/grid/_omega.scss */
         section#photos ul li:nth-child(3n+1) {
           clear: left; } }
-    /* line 162, ../scss/base/_content.scss */
+    /* line 158, ../scss/base/_content.scss */
     section#photos ul li.hidden {
       display: none; }
