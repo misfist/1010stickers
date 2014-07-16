@@ -122,10 +122,10 @@ $tabletscreen: em(480 + 1);
 $desktopscreen: em(768);
 $largescreen: em(1020);
 
-$mobile: new-breakpoint(max-width 480px);
-$tablet: new-breakpoint(max-width 768px min-width 481px);
-$desktop: new-breakpoint(min-width 768px);
-$large: new-breakpoint(min-width 1020px);
+$mobile: new-breakpoint(max-width $mobilescreen);
+$tablet: new-breakpoint(max-width $desktopscreen min-width $tabletscreen);
+$desktop: new-breakpoint(min-width $desktopscreen);
+$large: new-breakpoint(min-width $largescreen);
 
 
 // CLEARFIX
