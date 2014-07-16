@@ -89,7 +89,7 @@ $layer5: 5; // lightbox content
 // neat.bourbon.io/docs/
 
 $grid-columns: 12;
-$max-width: 1020px;
+$max-width: em(1020);
 
 
 // MIXINS 
