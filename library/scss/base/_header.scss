@@ -32,10 +32,10 @@ body>header {
 		background-position: top center;
 		max-height: 510px;
 		overflow: hidden;
-		background-color: $gray2;
 	}
 	@include media($large) {
 		background-size: 1020px;
+		background-color: $gray2;
 	}
 
 	@include clearfix;
