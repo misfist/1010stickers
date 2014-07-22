@@ -1,0 +1,20 @@
+
+body.order-form {
+  section#intro article {
+    h2 {
+      display: none;
+    }
+    p,
+    .formRow {
+      text-align: left;
+      font-family: $sans !important;
+    }
+    p#jQ-uid-3 {
+      display: none;
+    }
+    b {
+      font-family: $lora !important;
+    }
+  }
+}
+
