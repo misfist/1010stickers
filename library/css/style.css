@@ -673,11 +673,36 @@ a.button {
     border-style: solid; }
 
 /* line 231, ../scss/base/_typography.scss */
+#order a.button {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center; }
+  /* line 75, ../scss/base/_mixins.scss */
+  #order a.button:hover {
+    background-color: white;
+    color: #d0112b;
+    border-color: #d0112b;
+    border-width: 2px;
+    border-style: solid; }
+
+/* line 237, ../scss/base/_typography.scss */
 section h2 {
   border-bottom-color: #d0d2d3;
   border-bottom-width: 2px;
   border-bottom-style: solid; }
-  /* line 235, ../scss/base/_typography.scss */
+  /* line 241, ../scss/base/_typography.scss */
   section h2 span {
     display: block;
     float: left;
@@ -1147,3 +1172,18 @@ section#photos {
     /* line 158, ../scss/base/_content.scss */
     section#photos ul li.hidden {
       display: none; }
+
+/* line 4, ../scss/base/_orderform.scss */
+body.order-form section#intro article h2 {
+  display: none; }
+/* line 8, ../scss/base/_orderform.scss */
+body.order-form section#intro article p,
+body.order-form section#intro article .formRow {
+  text-align: left;
+  font-family: "Open Sans", sans-serif !important; }
+/* line 12, ../scss/base/_orderform.scss */
+body.order-form section#intro article p#jQ-uid-3 {
+  display: none; }
+/* line 15, ../scss/base/_orderform.scss */
+body.order-form section#intro article b {
+  font-family: "Lora", serif !important; }

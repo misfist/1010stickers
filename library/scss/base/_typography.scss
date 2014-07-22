@@ -227,6 +227,12 @@ a.button {
     }
 }
 
+#order {
+    a.button {
+        @include button($bordercolor: $white, $hovercolor: $red, $hoverbackground: $white, $hoverborder: $red);
+    }
+}
+
 section {
     h2 {
         border-bottom: {

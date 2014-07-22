@@ -28,7 +28,7 @@ require getcwd() .'/library/scripts/image-array.php';
             <article>
                 <p>Show your support by displaying a removable window decal or a poster at your place of business. Both are FREE – there is no cost to you for the window decal, poster or shipping and handling.</p>
 
-                <a class="button">Order Free Today</a>
+                <a class="button" href="http://org.salsalabs.com/o/1924/signup_page/1010bizdecal-order-form" target="_blank">Order Free Today</a>
             </article>
         </section>
         <section id="order">
@@ -40,7 +40,7 @@ require getcwd() .'/library/scripts/image-array.php';
 
                 </div>
 
-                <p><a class="button">Order Free Today</a></p>
+                <p><a class="button" href="http://org.salsalabs.com/o/1924/signup_page/1010bizdecal-order-form" target="_blank">Order Free Today</a></p>
             </article>
        </section>
         <section id="partners">
@@ -63,7 +63,7 @@ require getcwd() .'/library/scripts/image-array.php';
                 </ul>
                 
                 <p><a id="loadMore" class="button">Load More Images</a></p>
-                <p><a class="button">Submit a Photo</a></p>
+                <p><a href="mailto:photos@businessforafairminimumwage.org?subject=Photo%20Submission" class="button">Submit a Photo</a></p>
             </article>
         </section>
     </main>
