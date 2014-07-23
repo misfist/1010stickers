@@ -74,20 +74,20 @@ require getcwd() .'/library/scripts/image-array.php';
             <ul class="contacts">
                 <li>
                     <p><strong>Business for a Fair Minimum Wage</strong></p>
-                    <p><a>businessforafairminimumwage.org</a></p>
-                    <p><a>info@businessforafairminimumwage.org</a></p>
+                    <p><a href="http://businessforafairminimumwage.org" target="_blank">businessforafairminimumwage.org</a></p>
+                    <p><a href="mailto:info@businessforafairminimumwage.org?subject=Contact%20Submission">info@businessforafairminimumwage.org</a></p>
                     <p>617.610.6766</p>
                 </li>
                 <li>
                     <p><strong>Main Street Alliance</strong></p>
-                    <p><a>mainstreetalliance.org</a></p>
-                    <p><a>jwelter@mainstreetalliance.org</a></p>
+                    <p><a href="http://mainstreetalliance.org" target="_blank">mainstreetalliance.org</a></p>
+                    <p><a href="mailto:jwelter@mainstreetalliance.org?subject=Contact%20Submission">jwelter@mainstreetalliance.org</a></p>
                     <p>206.383.1857</p>
                 </li>
                 <li>
                     <p><strong>Smart Capitalists for American Prosperity</strong></p>
-                    <p><a>smartcapitalists.org</a></p>
-                    <p><a>erica@agendaproject.org</a></p>
+                    <p><a href="http://smartcapitalists.org" target="_blank">smartcapitalists.org</a></p>
+                    <p><a href="mailto:erica@agendaproject.org?subject=Contact%20Submission">erica@agendaproject.org</a></p>
                     <p>202.446.0489</p>
                 </li>
             </ul>
