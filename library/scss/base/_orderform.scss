@@ -1,5 +1,14 @@
 
 body.order-form {
+  header.header {
+    text-align: center;
+    background: none;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: em(1020);
+    }
+  }
   section#intro article {
     h2 {
       display: none;

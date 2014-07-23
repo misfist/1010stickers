@@ -1173,17 +1173,26 @@ section#photos {
     section#photos ul li.hidden {
       display: none; }
 
-/* line 4, ../scss/base/_orderform.scss */
+/* line 3, ../scss/base/_orderform.scss */
+body.order-form header.header {
+  text-align: center;
+  background: none; }
+  /* line 6, ../scss/base/_orderform.scss */
+  body.order-form header.header img {
+    width: 100%;
+    height: auto;
+    max-width: 63.75em; }
+/* line 13, ../scss/base/_orderform.scss */
 body.order-form section#intro article h2 {
   display: none; }
-/* line 8, ../scss/base/_orderform.scss */
+/* line 17, ../scss/base/_orderform.scss */
 body.order-form section#intro article p,
 body.order-form section#intro article .formRow {
   text-align: left;
   font-family: "Open Sans", sans-serif !important; }
-/* line 12, ../scss/base/_orderform.scss */
+/* line 21, ../scss/base/_orderform.scss */
 body.order-form section#intro article p#jQ-uid-3 {
   display: none; }
-/* line 15, ../scss/base/_orderform.scss */
+/* line 24, ../scss/base/_orderform.scss */
 body.order-form section#intro article b {
   font-family: "Lora", serif !important; }
