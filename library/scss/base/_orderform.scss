@@ -20,9 +20,9 @@ body.order-form {
     h2 {
       display: none;
     }
-    // p, b {
-    //   font-family: $lora !important;
-    // }
+    p {
+      font-size: $body-size-s;
+    }
     .diaFields,
     .formRow {
       text-align: left;
