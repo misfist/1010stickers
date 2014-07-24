@@ -10,19 +10,23 @@ body.order-form {
     }
   }
   section#intro article {
+    font-family: $lora !important;
+    color: $gray4;
+    font-size: $body-size-s;
+    h3 {}
     h2 {
       display: none;
     }
-    p,
+    // p, b {
+    //   font-family: $lora !important;
+    // }
+    .diaFields,
     .formRow {
       text-align: left;
       font-family: $sans !important;
     }
     p#jQ-uid-3 {
       display: none;
-    }
-    b {
-      font-family: $lora !important;
     }
   }
 }

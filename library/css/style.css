@@ -1182,17 +1182,19 @@ body.order-form header.header {
     width: 100%;
     height: auto;
     max-width: 63.75em; }
-/* line 13, ../scss/base/_orderform.scss */
-body.order-form section#intro article h2 {
-  display: none; }
-/* line 17, ../scss/base/_orderform.scss */
-body.order-form section#intro article p,
-body.order-form section#intro article .formRow {
-  text-align: left;
-  font-family: "Open Sans", sans-serif !important; }
-/* line 21, ../scss/base/_orderform.scss */
-body.order-form section#intro article p#jQ-uid-3 {
-  display: none; }
-/* line 24, ../scss/base/_orderform.scss */
-body.order-form section#intro article b {
-  font-family: "Lora", serif !important; }
+/* line 12, ../scss/base/_orderform.scss */
+body.order-form section#intro article {
+  font-family: "Lora", serif !important;
+  color: #3f454f;
+  font-size: 16; }
+  /* line 17, ../scss/base/_orderform.scss */
+  body.order-form section#intro article h2 {
+    display: none; }
+  /* line 24, ../scss/base/_orderform.scss */
+  body.order-form section#intro article .diaFields,
+  body.order-form section#intro article .formRow {
+    text-align: left;
+    font-family: "Open Sans", sans-serif !important; }
+  /* line 28, ../scss/base/_orderform.scss */
+  body.order-form section#intro article p#jQ-uid-3 {
+    display: none; }
