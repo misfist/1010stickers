@@ -13,7 +13,10 @@ body.order-form {
     font-family: $lora !important;
     color: $gray4;
     font-size: $body-size-s;
-    h3 {}
+    h3 {
+      font-family: $lora !important;
+      color: $gray4;
+    }
     h2 {
       display: none;
     }
