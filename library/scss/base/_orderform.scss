@@ -37,5 +37,19 @@ body.order-form {
       display: none;
     }
   }
-}
 
+  section#partners {
+    li {
+      @include media($mobile) {
+        @include span-columns(12);
+        height: 1;
+        line-height: 1;
+        padding-bottom: em(30);
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+      }
+    }
+  }
+}
