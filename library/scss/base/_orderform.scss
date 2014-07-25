@@ -14,27 +14,36 @@ body.order-form {
       color: $red;
     }
   }
-  section#intro article {
-    font-family: $lora !important;
-    color: $gray4;
-    font-size: $body-size-s;
-    h3 {
+  section#intro {
+      h3 {
+        font-family: $lora !important;
+        color: $gray4;
+        padding-bottom: em(20);
+        @include media($mobile) {
+          font-size: 1.125rem;
+        }
+        @include media($desktop) {
+          font-size: em(28);
+        }
+      }
+      article {
       font-family: $lora !important;
       color: $gray4;
-    }
-    h2 {
-      display: none;
-    }
-    p {
-      font-size: $body-size-s;
-    }
-    .diaFields,
-    .formRow {
-      text-align: left;
-      font-family: $sans !important;
-    }
-    p#jQ-uid-3 {
-      display: none;
+      
+      h2 {
+        display: none;
+      }
+      p {
+        font-size: $body-size-s;
+      }
+      .diaFields,
+      .formRow {
+        text-align: left;
+        font-family: $sans !important;
+      }
+      p#jQ-uid-3 {
+        display: none;
+      }
     }
   }
 
@@ -53,3 +62,14 @@ body.order-form {
     }
   }
 }
+
+// .order-form main.content section#intro article div.salsa form h3 {
+//   color: red;
+//   font-size: em(28);
+//         @include media($mobile) {
+//           font-size: $h3-size-s !important;
+//         }
+//         @include media($desktop) {
+//           font-size: $h3-size-m !important;
+//         }
+// }
