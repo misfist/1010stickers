@@ -8,6 +8,11 @@ body.order-form {
       height: auto;
       max-width: em(1020);
     }
+    h3 {
+      padding-top: em(20);
+      font-family: $lora !important;
+      color: $red;
+    }
   }
   section#intro article {
     font-family: $lora !important;

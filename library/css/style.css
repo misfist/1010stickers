@@ -1182,26 +1182,31 @@ body.order-form header.header {
     width: 100%;
     height: auto;
     max-width: 63.75em; }
-/* line 12, ../scss/base/_orderform.scss */
+  /* line 11, ../scss/base/_orderform.scss */
+  body.order-form header.header h3 {
+    padding-top: 1.25em;
+    font-family: "Lora", serif !important;
+    color: #d0112b; }
+/* line 17, ../scss/base/_orderform.scss */
 body.order-form section#intro article {
   font-family: "Lora", serif !important;
   color: #3f454f;
   font-size: 16; }
-  /* line 16, ../scss/base/_orderform.scss */
+  /* line 21, ../scss/base/_orderform.scss */
   body.order-form section#intro article h3 {
     font-family: "Lora", serif !important;
     color: #3f454f; }
-  /* line 20, ../scss/base/_orderform.scss */
+  /* line 25, ../scss/base/_orderform.scss */
   body.order-form section#intro article h2 {
     display: none; }
-  /* line 23, ../scss/base/_orderform.scss */
+  /* line 28, ../scss/base/_orderform.scss */
   body.order-form section#intro article p {
     font-size: 16; }
-  /* line 27, ../scss/base/_orderform.scss */
+  /* line 32, ../scss/base/_orderform.scss */
   body.order-form section#intro article .diaFields,
   body.order-form section#intro article .formRow {
     text-align: left;
     font-family: "Open Sans", sans-serif !important; }
-  /* line 31, ../scss/base/_orderform.scss */
+  /* line 36, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
