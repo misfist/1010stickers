@@ -47,10 +47,10 @@ require getcwd() .'/library/scripts/image-array.php';
             <article>
                 <h2><span>Partners</span></h2>
                 <ul class="partners">
-                    <li class="partner-logo"><img alt="Business for a Fair Minimum Wage logo" src="library/images/partners/logo_1.png" class="bfmw" /></li>
-                    <li class="partner-logo"><img alt="The Main Street Alliance logo" src="library/images/partners/logo_2.png" class="msa" /></li>
-                    <li class="partner-logo"><img alt="Smart Capitalists for American Prosperity log" src="library/images/partners/logo_3.png" class="scap" /></li>
-                    <li class="partner-logo"><img alt="Uncommon Goods logo" src="library/images/partners/logo_4.png" class="ug" /></li>
+                    <li class="partner-logo"><a href="http://businessforafairminimumwage.org" target="_blank"><img alt="Business for a Fair Minimum Wage logo" src="library/images/partners/logo_1.png" class="bfmw" /></a></li>
+                    <li class="partner-logo"><a href="http://mainstreetalliance.org" target="_blank"><img alt="The Main Street Alliance logo" src="library/images/partners/logo_2.png" class="msa" /></a></li>
+                    <li class="partner-logo"><a href="http://smartcapitalists.org" target="_blank"><img alt="Smart Capitalists for American Prosperity log" src="library/images/partners/logo_3.png" class="scap" /></a></li>
+                    <li class="partner-logo"><a href="http://uncommongoods.com/" target="_blank"><img alt="Uncommon Goods logo" src="library/images/partners/logo_4.png" class="ug" /></a></li>
                 </ul>
             </article>
         </section>
