@@ -63,7 +63,7 @@ require getcwd() .'/library/scripts/image-array.php';
                 </ul>
                 
                 <p><a id="loadMore" class="button">Load More Images</a></p>
-                <p><a href="mailto:photos@businessforafairminimumwage.org?subject=Photo%20Submission" class="button">Submit a Photo</a></p>
+                <p><a href="mailto:photos@1010bizdecal.com?subject=Photo%20Submission" class="button">Submit a Photo</a></p>
             </article>
         </section>
     </main>
