@@ -3,7 +3,7 @@
 body>footer {
     background: $gray4;
     font-family: $sans;
-    color: $gray6;
+    color: $anchor-color;
     font-weight: 800;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -20,7 +20,7 @@ body>footer {
             margin: 18px 0;
             font-weight: 800;
             text-transform: uppercase;
-            color: $gray6;
+            color: $anchor-color;
         }        
     }
     ul li {

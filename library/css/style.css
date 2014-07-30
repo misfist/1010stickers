@@ -719,20 +719,20 @@ section h2 {
 a,
 a:link {
   border: none;
-  color: #f2f2f2;
+  color: #cccccc;
   font-weight: normal;
   text-decoration: none; }
 
 /* line 47, ../scss/base/_mixins.scss */
 a:visited {
   border: none;
-  color: #f2f2f2;
+  color: #cccccc;
   text-decoration: none; }
 
 /* line 52, ../scss/base/_mixins.scss */
 a:hover {
   border: none;
-  color: #f2f2f2;
+  color: #cccccc;
   text-decoration: none; }
 
 /* line 6, ../scss/base/_header.scss */
@@ -835,7 +835,7 @@ body > header {
 body > footer {
   background: #3f454f;
   font-family: "Open Sans", sans-serif;
-  color: #6f747b;
+  color: #cccccc;
   font-weight: 800;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -861,7 +861,7 @@ body > footer {
       margin: 18px 0;
       font-weight: 800;
       text-transform: uppercase;
-      color: #6f747b; }
+      color: #cccccc; }
   /* line 26, ../scss/base/_footer.scss */
   body > footer ul li {
     font-weight: 300; }
