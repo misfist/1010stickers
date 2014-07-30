@@ -81,8 +81,8 @@ require getcwd() .'/library/scripts/image-array.php';
                 <li>
                     <p><strong>Main Street Alliance</strong></p>
                     <p><a href="http://mainstreetalliance.org" target="_blank">mainstreetalliance.org</a></p>
-                    <p><a href="mailto:jwelter@mainstreetalliance.org?subject=Contact%20Submission">jwelter@mainstreetalliance.org</a></p>
-                    <p>206.383.1857</p>
+                    <p><a href="mailto:info@mainstreetalliance.org?subject=Contact%20Submission">info@mainstreetalliance.org</a></p>
+                    <p>206.568.5400</p>
                 </li>
                 <li>
                     <p><strong>Smart Capitalists for American Prosperity</strong></p>
