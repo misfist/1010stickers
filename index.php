@@ -69,7 +69,7 @@ require getcwd() .'/library/scripts/image-array.php';
     </main>
     <footer class="footer">
         <section id="footer">
-            <div class="copyright">2014. All Rights Reserved. Brought to you by Business for a Fair Minimum Wage, The Main Street Alliance, Smart Capitalists for American Prosperity, and orders fulfilled by UncommonGoods.</div>
+            <div class="copyright">&#0169;2014. All Rights Reserved. Brought to you by Business for a Fair Minimum Wage, The Main Street Alliance, Smart Capitalists for American Prosperity, and orders fulfilled by UncommonGoods.</div>
             <h4 class="footer-nav">Contact Us</h4>
             <ul class="contacts">
                 <li>
