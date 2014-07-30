@@ -906,7 +906,8 @@ body > footer {
       font-weight: 300; }
   /* line 53, ../scss/base/_footer.scss */
   body > footer .copyright {
-    color: #8c8c8c; }
+    color: #8c8c8c;
+    font-weight: 300; }
 
 /* line 3, ../scss/base/_content.scss */
 ul {
