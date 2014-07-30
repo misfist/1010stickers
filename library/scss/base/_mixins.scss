@@ -36,7 +36,7 @@
   style: $style;
 }
 
-@mixin standard-links ($color: $anchor-color, $vcolor: darken($anchor-color,10%), $hcolor: $anchor-color, $weight: normal, $text-decoration: none, $text-transform: none, $border: none) {
+@mixin standard-links ($color: $anchor-color, $vcolor: $anchor-color, $hcolor: $anchor-color, $weight: normal, $text-decoration: none, $text-transform: none, $border: none) {
   a,
   a:link {
     border: $border;

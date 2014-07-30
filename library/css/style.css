@@ -719,20 +719,20 @@ section h2 {
 a,
 a:link {
   border: none;
-  color: #898e94;
+  color: #f2f2f2;
   font-weight: normal;
   text-decoration: none; }
 
 /* line 47, ../scss/base/_mixins.scss */
 a:visited {
   border: none;
-  color: #6f747b;
+  color: #f2f2f2;
   text-decoration: none; }
 
 /* line 52, ../scss/base/_mixins.scss */
 a:hover {
   border: none;
-  color: #898e94;
+  color: #f2f2f2;
   text-decoration: none; }
 
 /* line 6, ../scss/base/_header.scss */
@@ -1199,7 +1199,7 @@ body.order-form section#intro h3 {
   @media screen and (min-width: 48em) {
     /* line 18, ../scss/base/_orderform.scss */
     body.order-form section#intro h3 {
-      font-size: 1.75em; } }
+      font-size: 1.5em; } }
 /* line 29, ../scss/base/_orderform.scss */
 body.order-form section#intro article {
   font-family: "Lora", serif !important;

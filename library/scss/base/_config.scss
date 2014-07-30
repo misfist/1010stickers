@@ -34,8 +34,8 @@ $gray1: lighten($black, 95%);
 // http://sachagreif.com/sass-color-variables/
 
 $text-color: $gray4;
-$anchor-color: lighten($gray6, 10%);
-$anchor-hover: lighten($gray6, 20%);
+$anchor-color: $gray1;
+$anchor-hover: $gray1;
 $headline-color: $gray9;
 
 $hr-color: $gray9;
