@@ -27,14 +27,43 @@ body.order-form {
         }
       }
       article {
-      font-family: $lora !important;
-      color: $gray4;
+        font-family: $lora !important;
+        color: $gray4;
       
       h2 {
         display: none;
       }
       p {
         font-size: $body-size-s;
+        text-align: left;
+        &.required-note {
+        @include media($mobile) {
+           padding: em(30) em(10) 0 em(10);
+        }
+        @include media($desktop) {
+           padding: em(30) em(40) 0 em(40);
+        }         
+          margin-bottom: 0;
+          font-family: $sans !important;
+          font-size: em(13);
+        }
+      }
+      ul {
+        li {
+          max-width: 100%;
+          list-style-type: square;
+          list-style-position: inside;
+          text-align: left;
+        }
+      }
+      .supporterInfo {
+        @include media($mobile) {
+          padding: 0 em(10);
+        }
+        @include media($desktop) {
+          padding: 0 em(40);
+        }
+        
       }
       .diaFields,
       .formRow {

@@ -1213,17 +1213,45 @@ body.order-form section#intro article {
     display: none; }
   /* line 36, ../scss/base/_orderform.scss */
   body.order-form section#intro article p {
-    font-size: 16; }
-  /* line 40, ../scss/base/_orderform.scss */
+    font-size: 16;
+    text-align: left; }
+    /* line 39, ../scss/base/_orderform.scss */
+    body.order-form section#intro article p.required-note {
+      margin-bottom: 0;
+      font-family: "Open Sans", sans-serif !important;
+      font-size: 0.8125em; }
+      @media screen and (max-width: 30em) {
+        /* line 39, ../scss/base/_orderform.scss */
+        body.order-form section#intro article p.required-note {
+          padding: 1.875em 0.625em 0 0.625em; } }
+      @media screen and (min-width: 48em) {
+        /* line 39, ../scss/base/_orderform.scss */
+        body.order-form section#intro article p.required-note {
+          padding: 1.875em 2.5em 0 2.5em; } }
+  /* line 52, ../scss/base/_orderform.scss */
+  body.order-form section#intro article ul li {
+    max-width: 100%;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left; }
+  @media screen and (max-width: 30em) {
+    /* line 59, ../scss/base/_orderform.scss */
+    body.order-form section#intro article .supporterInfo {
+      padding: 0 0.625em; } }
+  @media screen and (min-width: 48em) {
+    /* line 59, ../scss/base/_orderform.scss */
+    body.order-form section#intro article .supporterInfo {
+      padding: 0 2.5em; } }
+  /* line 69, ../scss/base/_orderform.scss */
   body.order-form section#intro article .diaFields,
   body.order-form section#intro article .formRow {
     text-align: left;
     font-family: "Open Sans", sans-serif !important; }
-  /* line 44, ../scss/base/_orderform.scss */
+  /* line 73, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
 @media screen and (max-width: 30em) {
-  /* line 51, ../scss/base/_orderform.scss */
+  /* line 80, ../scss/base/_orderform.scss */
   body.order-form section#partners li {
     display: block;
     float: left;
@@ -1235,6 +1263,6 @@ body.order-form section#intro article {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     body.order-form section#partners li:last-child {
       margin-right: 0; }
-    /* line 58, ../scss/base/_orderform.scss */
+    /* line 87, ../scss/base/_orderform.scss */
     body.order-form section#partners li:last-child {
       padding-bottom: 0; } }
