@@ -1117,12 +1117,12 @@ section#partners {
 /* line 138, ../scss/base/_content.scss */
 section#photos {
   text-align: center;
-  padding-bottom: 58px; }
+  padding-bottom: 1.75em; }
   /* line 141, ../scss/base/_content.scss */
   section#photos ul {
     *zoom: 1;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 2.5em;
+    padding-bottom: 1.25em;
     margin-bottom: 0; }
     /* line 18, ../scss/bourbon/addons/_clearfix.scss */
     section#photos ul:before, section#photos ul:after {

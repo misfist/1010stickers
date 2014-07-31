@@ -137,11 +137,11 @@ section#partners {
 
 section#photos {
   text-align: center;
-  padding-bottom: 58px;
+  padding-bottom: em(28);
   ul {
     @include clearfix;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: em(40);
+    padding-bottom: em(20);
     margin-bottom: 0;
     li {
       @include media($mobile) {
