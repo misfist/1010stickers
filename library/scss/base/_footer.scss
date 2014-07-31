@@ -5,8 +5,8 @@ body>footer {
     font-family: $sans;
     color: $anchor-color;
     font-weight: 800;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: em(50);
+    padding-bottom: em(50);
     text-align: center;
 
     a {
