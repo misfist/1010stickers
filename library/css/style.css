@@ -1234,20 +1234,37 @@ body.order-form section#intro article {
     list-style-type: square;
     list-style-position: inside;
     text-align: left; }
-  /* line 59, ../scss/base/_orderform.scss */
+  /* line 41, ../scss/base/_mixins.scss */
+  body.order-form section#intro article a,
+  body.order-form section#intro article a:link {
+    border: none;
+    color: #d0112b;
+    font-weight: normal;
+    text-decoration: none; }
+  /* line 47, ../scss/base/_mixins.scss */
+  body.order-form section#intro article a:visited {
+    border: none;
+    color: #d0112b;
+    text-decoration: none; }
+  /* line 52, ../scss/base/_mixins.scss */
+  body.order-form section#intro article a:hover {
+    border: none;
+    color: #0077bd;
+    text-decoration: none; }
+  /* line 61, ../scss/base/_orderform.scss */
   body.order-form section#intro article .required {
     color: #d0112b; }
-  /* line 72, ../scss/base/_orderform.scss */
+  /* line 66, ../scss/base/_orderform.scss */
   body.order-form section#intro article .diaFields,
   body.order-form section#intro article .formRow {
     text-align: left;
     font-family: "Open Sans", sans-serif !important; }
-    /* line 75, ../scss/base/_orderform.scss */
+    /* line 69, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields label,
     body.order-form section#intro article .formRow label {
       font-size: 0.75em;
       display: block; }
-    /* line 80, ../scss/base/_orderform.scss */
+    /* line 74, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields input[type='submit'],
     body.order-form section#intro article .formRow input[type='submit'] {
       display: inline-block;
@@ -1274,18 +1291,18 @@ body.order-form section#intro article {
         border-width: 2px;
         border-style: solid; }
   @media screen and (max-width: 30em) {
-    /* line 84, ../scss/base/_orderform.scss */
+    /* line 78, ../scss/base/_orderform.scss */
     body.order-form section#intro article .formRow {
       padding: 0 0.625em; } }
   @media screen and (min-width: 48em) {
-    /* line 84, ../scss/base/_orderform.scss */
+    /* line 78, ../scss/base/_orderform.scss */
     body.order-form section#intro article .formRow {
       padding: 0 2.5em; } }
-  /* line 93, ../scss/base/_orderform.scss */
+  /* line 87, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
 @media screen and (max-width: 30em) {
-  /* line 100, ../scss/base/_orderform.scss */
+  /* line 94, ../scss/base/_orderform.scss */
   body.order-form section#partners li {
     display: block;
     float: left;
@@ -1297,6 +1314,6 @@ body.order-form section#intro article {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     body.order-form section#partners li:last-child {
       margin-right: 0; }
-    /* line 107, ../scss/base/_orderform.scss */
+    /* line 101, ../scss/base/_orderform.scss */
     body.order-form section#partners li:last-child {
       padding-bottom: 0; } }

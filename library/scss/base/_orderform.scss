@@ -56,18 +56,12 @@ body.order-form {
           text-align: left;
         }
       }
+      @include standard-links ($color: $red, $vcolor: $red, $hcolor: $blue, $weight: normal);
+
       .required {
         color: $red;
       }
-      .supporterInfo {
-        // @include media($mobile) {
-        //   padding: 0 em(10);
-        // }
-        // @include media($desktop) {
-        //   padding: 0 em(40);
-        // }
-        
-      }
+      .supporterInfo {}
       .diaFields,
       .formRow {
         text-align: left;
