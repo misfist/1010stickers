@@ -54,7 +54,7 @@ require getcwd() .'/library/scripts/image-array.php';
                 </ul>
             </article>
         </section>
-        <section id="photos">
+        <!-- <section id="photos">
             <article>
                 <h2><span>Your Photos</span></h2>
                 <ul class="photos">
@@ -65,7 +65,7 @@ require getcwd() .'/library/scripts/image-array.php';
                 <p><a id="loadMore" class="button">Load More Images</a></p>
                 <p><a href="mailto:photos@1010bizdecal.com?subject=Photo%20Submission" class="button">Submit a Photo</a></p>
             </article>
-        </section>
+        </section> -->
     </main>
     <footer class="footer">
         <section id="footer">
