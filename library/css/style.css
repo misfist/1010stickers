@@ -1234,24 +1234,58 @@ body.order-form section#intro article {
     list-style-type: square;
     list-style-position: inside;
     text-align: left; }
-  @media screen and (max-width: 30em) {
-    /* line 59, ../scss/base/_orderform.scss */
-    body.order-form section#intro article .supporterInfo {
-      padding: 0 0.625em; } }
-  @media screen and (min-width: 48em) {
-    /* line 59, ../scss/base/_orderform.scss */
-    body.order-form section#intro article .supporterInfo {
-      padding: 0 2.5em; } }
-  /* line 69, ../scss/base/_orderform.scss */
+  /* line 59, ../scss/base/_orderform.scss */
+  body.order-form section#intro article .required {
+    color: #d0112b; }
+  /* line 72, ../scss/base/_orderform.scss */
   body.order-form section#intro article .diaFields,
   body.order-form section#intro article .formRow {
     text-align: left;
     font-family: "Open Sans", sans-serif !important; }
-  /* line 73, ../scss/base/_orderform.scss */
+    /* line 75, ../scss/base/_orderform.scss */
+    body.order-form section#intro article .diaFields label,
+    body.order-form section#intro article .formRow label {
+      font-size: 0.75em;
+      display: block; }
+    /* line 80, ../scss/base/_orderform.scss */
+    body.order-form section#intro article .diaFields input[type='submit'],
+    body.order-form section#intro article .formRow input[type='submit'] {
+      display: inline-block;
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      color: #d0112b;
+      font-size: 1.2rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      border-color: #d0112b;
+      border-width: 2px;
+      border-style: solid;
+      background-color: transparent;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center; }
+      /* line 75, ../scss/base/_mixins.scss */
+      body.order-form section#intro article .diaFields input[type='submit']:hover,
+      body.order-form section#intro article .formRow input[type='submit']:hover {
+        background-color: white;
+        color: #0077bd;
+        border-color: #0077bd;
+        border-width: 2px;
+        border-style: solid; }
+  @media screen and (max-width: 30em) {
+    /* line 84, ../scss/base/_orderform.scss */
+    body.order-form section#intro article .formRow {
+      padding: 0 0.625em; } }
+  @media screen and (min-width: 48em) {
+    /* line 84, ../scss/base/_orderform.scss */
+    body.order-form section#intro article .formRow {
+      padding: 0 2.5em; } }
+  /* line 93, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
 @media screen and (max-width: 30em) {
-  /* line 80, ../scss/base/_orderform.scss */
+  /* line 100, ../scss/base/_orderform.scss */
   body.order-form section#partners li {
     display: block;
     float: left;
@@ -1263,6 +1297,6 @@ body.order-form section#intro article {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     body.order-form section#partners li:last-child {
       margin-right: 0; }
-    /* line 87, ../scss/base/_orderform.scss */
+    /* line 107, ../scss/base/_orderform.scss */
     body.order-form section#partners li:last-child {
       padding-bottom: 0; } }

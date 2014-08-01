@@ -56,19 +56,39 @@ body.order-form {
           text-align: left;
         }
       }
+      .required {
+        color: $red;
+      }
       .supporterInfo {
-        @include media($mobile) {
-          padding: 0 em(10);
-        }
-        @include media($desktop) {
-          padding: 0 em(40);
-        }
+        // @include media($mobile) {
+        //   padding: 0 em(10);
+        // }
+        // @include media($desktop) {
+        //   padding: 0 em(40);
+        // }
         
       }
       .diaFields,
       .formRow {
         text-align: left;
         font-family: $sans !important;
+        label {
+          font-size: em(12);
+          display: block;
+        }
+        input {}
+        input[type='submit'] {
+          @include button($bordercolor: $red, $hovercolor: $blue, $hoverbackground: $white, $hoverborder: $blue);
+        }
+      }
+      .formRow {
+        @include media($mobile) {
+           padding: 0 em(10);
+        }
+        @include media($desktop) {
+           padding: 0 em(40);
+        }   
+
       }
       p#jQ-uid-3 {
         display: none;
@@ -91,14 +111,3 @@ body.order-form {
     }
   }
 }
-
-// .order-form main.content section#intro article div.salsa form h3 {
-//   color: red;
-//   font-size: em(28);
-//         @include media($mobile) {
-//           font-size: $h3-size-s !important;
-//         }
-//         @include media($desktop) {
-//           font-size: $h3-size-m !important;
-//         }
-// }
