@@ -48,7 +48,8 @@ body.order-form {
           font-size: em(13);
         }
       }
-      ul {
+      ul,
+      .error {
         li {
           max-width: 100%;
           list-style-type: square;
@@ -58,8 +59,35 @@ body.order-form {
       }
       @include standard-links ($color: $red, $vcolor: $red, $hcolor: $blue, $weight: normal);
 
-      .required {
+      .required-note,
+      .required,
+      .error {
         color: $red;
+      }
+      .required-note {
+        b {
+          color: $gray4;
+        }
+      }
+      .error {
+        @include media($mobile) {
+           padding: em(30) em(10) 0 em(10);
+        }
+        @include media($desktop) {
+           padding: em(30) em(40) 0 em(40);
+        }  
+          margin-top: em(10);
+          text-align: left;
+          font-weight: bold;
+          font-family: $sans !important;
+          font-size: em(13);
+        li {
+          margin-bottom: 0;
+          font-size: em(15);
+          &:first-child {
+            margin-top: em(10);
+          }
+        }
       }
       .supporterInfo {}
       .diaFields,
@@ -67,12 +95,21 @@ body.order-form {
         text-align: left;
         font-family: $sans !important;
         label {
-          font-size: em(12);
+          font-size: em(13);
+          font-weight: bold;
           display: block;
         }
         input {}
+        input[type='text'],
+        input.blockInput,
+        .stateSelect select,
+        .stateSelect option {
+          font-size: em(13);
+          color: $gray8;
+        }
         input[type='submit'] {
           @include button($bordercolor: $red, $hovercolor: $blue, $hoverbackground: $white, $hoverborder: $blue);
+          margin-top: em(15);
         }
       }
       .formRow {
