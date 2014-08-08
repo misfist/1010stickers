@@ -151,8 +151,6 @@ p {
     }
 }
 
-
-
 li, dt, dd {
     @include font-size($body-size-s);
 	margin-bottom: .75em;
@@ -175,8 +173,6 @@ small {
 	@include breakpoint(large) {@include font-size($small-size-l);}
 }
 
-
-
 b, strong {
   font-weight: 700;
 }
@@ -184,7 +180,6 @@ b, strong {
 i, em {
     font-style: italic;
 }
-
 
 blockquote {
     padding: 0 10% 0 0;
