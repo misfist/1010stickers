@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Order a $10.10 Minimum Wage Sticker</title>
 
-    <link rel="stylesheet" href="library/css/style.css">
-    <script src="http://1010stickers.mayfirst.org/library/js/jquery-1.11.1.js"></script>
-    <script src="http://1010stickers.mayfirst.org/library/js/more-photos.js"></script>
+    <link rel="stylesheet" href="/library/css/style.css">
+    <script src="/library/js/jquery-1.11.1.js"></script>
+    <script src="/library/js/more-photos.js"></script>
     <body class="order-form">
 
     <header class="header">
@@ -17,33 +17,40 @@
             <h3>Order Form for Business Decal and Poster</h3>
         </article>
 
-        <img alt="" src="http://1010stickers.mayfirst.org/library/images/poster_sticker_badge.png" id="1010 Sticker Thumbnails">
+        <img alt="" src="/library/images/poster_sticker_badge.png" id="1010 Sticker Thumbnails">
     </header>
     <main class="content">
         <section id="intro">
           <article>
-            <p id="jQ-uid-3">
-              <link rel="stylesheet" type="text/css" href="/salsa/include/css/dia/api/salsa.css"/>
+            <!-- TemplateBeginEditable name="content" -->
             <div class="salsa">
               <form name="data" action="/save" method="POST">
                 <style>
-                    .memberSignup{display: none;}
-                </style>
+            .memberSignup{display: none;}
+            </style>
                 <div class="memberSignup">
                   <input name="first_name_1924" value="" />
                 </div>
                 <h2>Order Form for Decal + Poster</h2>
-        
-                <h3>ORDERING INSTRUCTIONS: Please choose from the following options for display on your business website or at your place of business. <a href="somelink.html">All options</a> are free of charge to businesses including no cost for shipping and handling.&nbsp;</h3>
+                <h3>ORDERING INSTRUCTIONS: Please choose from the following options for display on your business website or at your place of business. All options are free of charge to businesses including no cost for shipping and handling.&#160;</h3>
                 <ul>
-                    <li><b>Window Decal</b>: Decal is 5 inches in diameter and easy to remove and reposition on the inside of your window or door.</li>
-                    <li><b>8.5x11 Poster</b>: Poster printed on glossy recycled paper.</li>
-                    <li><b>Digital Versions of Decal and Poster</b>: For printing the decal or poster yourself, digital files will be provided on the Thank You page after you submit the form below.</li>
-                    <li><b>Website Badge</b>: Digital decal resized for use on your website. A link to download this file will be provided on the Thank You page after you submit the form below.</li>
+                  <li><b>Window Decal</b>: Decal is 5 inches in diameter and easy to remove and reposition on the inside of your window or door.</li>
+                  <li><b>8.5x11 Poster</b>: Poster printed on glossy recycled paper.</li>
+                  <li><b>Digital Versions of Decal and Poster</b>: For printing the decal or poster yourself, digital files will be provided on the Thank You page after you submit the form below.</li>
+                  <li><b>Website Badge</b>: Digital decal resized for use on your website. A link to download this file will be provided on the Thank You page after you submit the form below.</li>
                 </ul>
-                <p class="required-note">* <b>Indicates Required Field.</b> Please indicate the name of your business or business organization in the Organization field in the form below.</p>
-
-                <input type="hidden" name="redirect" value="thankYou.sjs" />
+                <p class="required-note">* <b>Indicates Required Field.</b></p>
+                <p class="required-note"><b>Please put the name of your Business or Business Organization in the Organization Field in the form below.</b></p>
+                <input type="hidden" name="redirect" value="http://org.salsalabs.com/o/1924/p/salsa/web/common/public/content?content_item_KEY=12815" />
+                <div class="error">Some required fields are missing:
+                  <li>Phone
+                  <li>Street
+                  <li>Email
+                  <li>State
+                  <li>Organization
+                  <li>Zip
+                  <li>City
+                </div>
                 <script language="JavaScript" src="/salsa/include/loadjquery.js"></script> 
                 <script language="JavaScript" src="/dia/include/datetime/jquery.date_input.js"></script> 
                 <script language="JavaScript" src="/dia/include/datetime/init_date_input.js"></script>
@@ -56,17 +63,17 @@
                     <div class="clear"></div>
                     <div class="formRow">
                       <label for="f1">First Name<span class='required'>*</span></label>
-                      <input title="First Name" type="text" id="f1" name="First_Name" class="blockInput salsa_first_name" value="" size="25" />
+                      <input title="First Name" type="text" id="f1" name="First_Name" class="blockInput salsa_first_name" value="Pea" size="25" />
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
                       <label for="f2">Last Name<span class='required'>*</span></label>
-                      <input title="Last Name" type="text" id="f2" name="Last_Name" class="blockInput salsa_last_name" value="" size="25" />
+                      <input title="Last Name" type="text" id="f2" name="Last_Name" class="blockInput salsa_last_name" value="Lutz" size="25" />
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
                       <label for="f3" >Business or Professional Title, e.g. Owner, CEO<span class='required'>*</span></label>
-                      <input  class='blockInput' id='f3' name='VARCHAR0' value=''  >
+                      <input  class='blockInput' id='f3' name='VARCHAR0' value='None'  >
                       </input>
                     </div>
                     <div class="clear"></div>
@@ -81,14 +88,19 @@
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
-                      <label for="f6">City<span class='required'>*</span></label>
-                      <input title="City" type="text" id="f6" name="City" class="blockInput salsa_city" value="" size="25" />
+                      <label for="f6">Street 2</label>
+                      <input title="Street 2" type="text" id="f6" name="Street_2" class="blockInput salsa_street_2" value="" size="25" />
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
-                      <label for="f7">State/Province<span class='required'>*</span></label>
+                      <label for="f7">City<span class='required'>*</span></label>
+                      <input title="City" type="text" id="f7" name="City" class="blockInput salsa_city" value="" size="25" />
+                    </div>
+                    <div class="clear"></div>
+                    <div class="formRow">
+                      <label for="f8">State/Province<span class='required'>*</span></label>
                       <span class="stateSelect">
-                      <select id="f7" name='State' class="state_dropdown blockInput salsa_state" >
+                      <select id="f8" name='State' class="state_dropdown blockInput salsa_state" >
                         <option value="">Select a state</option>
                         <option value="AL" >Alabama</option>
                         <option value="AK" >Alaska</option>
@@ -167,38 +179,62 @@
                       </span> </div>
                     <div class="clear"></div>
                     <div class="formRow">
-                      <label for="f8">Zip/Postal Code<span class='required'>*</span></label>
-                      <input title="Zip Code" type="text" id="f8" name="Zip" class="blockInput salsa_zip" value="" maxlength="10" />
+                      <label for="f9">Zip/Postal Code<span class='required'>*</span></label>
+                      <input title="Zip Code" type="text" id="f9" name="Zip" class="blockInput salsa_zip" value="" maxlength="10" />
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
-                      <label for="f9">Email<span class='required'>*</span></label>
+                      <label for="f10">Email<span class='required'>*</span></label>
                       <script type="text/javascript">
-                    function validateEmail(email) 
-                    {
-                        if (email=="") return;
-                        var re =/^[_a-zA-Z0-9!#$%&'*+/=?^`{|}~-]+(\.[_a-zA-Z0-9&'!#$%&'*+/=?^`{|}~-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]{1,})*\.([a-zA-Z]{2,}){1}$/;
-                        
-                        if (! re.test(email) ){
-                            $("div[id='emailValidationErrorId']").html("<span class='required'>Please enter a valid email address.</span>");
-                        }else{
-                            $("div[id='emailValidationErrorId']").html("");
-                        };
-                    }
-        </script>
+                        function validateEmail(email) 
+                        {
+                            if (email=="") return;
+                            var re =/^[_a-zA-Z0-9!#$%&'*+/=?^`{|}~-]+(\.[_a-zA-Z0-9&'!#$%&'*+/=?^`{|}~-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]{1,})*\.([a-zA-Z]{2,}){1}$/;
+                            
+                            if (! re.test(email) ){
+                                $("div[id='emailValidationErrorId']").html("<span class='required'>Please enter a valid email address.</span>");
+                            }else{
+                                $("div[id='emailValidationErrorId']").html("");
+                            };
+                        }
+            </script>
                       <div id="emailValidationErrorId"></div>
-                      <input title="Email" type="text" id="f9" name="Email" class="blockInput salsa_email" value="" onblur="validateEmail(this.value)" size="25" />
+                      <input title="Email" type="text" id="f10" name="Email" class="blockInput salsa_email" value="" onBlur="validateEmail(this.value)" size="25" />
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
-                      <label for="f10" >Web Page</label>
-                      <input  size=22 class='blockInput' id='f10' name='Web_Page' value=''  >
+                      <label for="f11" >Web Page</label>
+                      <input  size=22 class='blockInput' id='f11' name='Web_Page' value=''  >
                       </input>
                     </div>
                     <div class="clear"></div>
                     <div class="formRow">
-                      <label for="f11">Phone<span class='required'>*</span></label>
-                      <input title="Phone" type="text" id="f11" name="Phone" class="blockInput salsa_phone" value="" size="21" maxlength="50" />
+                      <label for="f12">Phone<span class='required'>*</span></label>
+                      <input title="Phone" type="text" id="f12" name="Phone" class="blockInput salsa_phone" value="" size="21" maxlength="50" />
+                    </div>
+                    <div class="clear"></div>
+                    <div class="formRow">
+                      <label for="f13" >If ordering Removable Window DECALS, enter the number you need</label>
+                      <input  size=8 maxlength=16 class='blockInput' id='f13' name='order_1010_decal' value='' >
+                      </input>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="formRow">
+                      <label for="f14" >If ordering 8.5x11 POSTERS, enter the number you need</label>
+                      <input  size=8 maxlength=16 class='blockInput' id='f14' name='order_1010_poster' value='' >
+                      </input>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="formRow">
+                      <label for="f15" >Check if you want DIGITAL file(s)</label>
+                      <input type='checkbox' class='checkbox blockInput' value='1' id='f15' name='order_1010_digital'  >
+                      <input type=hidden name='order_1010_digital' value='0'/>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="formRow">
+                      <label for="f16" >How did you hear about this?</label>
+                      <input  class='blockInput' id='f16' name='order_1010_how_hear' value=''  >
+                      </input>
                     </div>
                   </div>
                   <input type="hidden" name="required" value="First_Name,Last_Name,VARCHAR0,Organization,Street,City,State,Zip,Email,Phone," />
@@ -206,23 +242,26 @@
                 <input type="hidden" name="organization_KEY" value="1924" />
                 <input type="hidden" name="Receive_Email" value="3" />
                 <input type="hidden" name="email_trigger_KEYS" value="0" />
-                <div id="groups"> </div>
+                <div id="groups">
+                  <input type="hidden" name="link" value="groups" />
+                  <input type="hidden" name="linkKey" value="99303" />
+                </div>
                 <div id="tags">
                   <input type="hidden" name="tag" id="tag" value="signup:page7908" />
                 </div>
                 <input type="hidden" name="chapter_lookup" value="" />
-                <span></span> <br />
+                <span>You will see links to download digital files of the decal, poster and website badge on the Thank You page after you submit this form. </span> <br />
                 <div class="formRow">
                   <input type="submit" id="submitSignup" value="Submit" class="dia_submit" />
                 </div>
                 <p>
-                <p>Thank you!<br />
+                <p><strong>Thank you! Please allow 2-3 weeks to receive your shipment.</strong><br />
+                  If you still have questions about your order, contact us at info@1010bizdecal.com.<br />
                   <br />
                   We do not sell or otherwise share data collected here with outside solicitors.</p>
               </form>
             </div>
             <!-- TemplateEndEditable -->
-            </p>
           </article>
         </section>
        <section id="partners">
