@@ -17,7 +17,7 @@ require getcwd() .'/library/scripts/image-array.php';
 
     <header class="header">
         <section class="tagline">
-            <h3>We are business people that support a federal minimum wage of at least $10.10 an hour that adjusts annually with the rising cost of living.</h3>
+            <h3>We are business people who support a federal minimum wage of at least $10.10 an hour that adjusts annually with the rising cost of living.</h3>
         </section>
         <div class="background-image">
             <img alt="" src="library/images/transparent.png" id="placeholder" />
