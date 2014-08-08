@@ -144,4 +144,18 @@ body.order-form {
       }
     }
   }
+
+  // Badge display styles
+  pre {
+    @include span-columns(12);
+    overflow: hidden;
+    textarea {
+      @include span-columns(8);
+      font-family: monospace;
+      font-size: em(11);
+      width: 50%;
+      min-width: em(350);
+      height: em(200);
+    }
+  }
 }

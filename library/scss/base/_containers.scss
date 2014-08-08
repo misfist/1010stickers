@@ -46,14 +46,6 @@ body>footer {
   }
 }
 
-// body>header {
-//   max-height: 509px;
-//    @include media($tablet) {
-//     @include outer-container;
-//    }
-
-// }
-
 section {
   @include clearfix;
 }
