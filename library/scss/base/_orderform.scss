@@ -127,8 +127,9 @@ body.order-form {
         }
         input[type='submit'] {
           @include button($bordercolor: $red, $hovercolor: $blue, $hoverbackground: $white, $hoverborder: $blue);
-          margin-top: em(15);
+          margin: em(15) auto;
         }
+
       }
       .supporterInfo {
         @include media($mobile) {
@@ -176,4 +177,5 @@ body.order-form {
       height: em(200);
     }
   }
+
 }

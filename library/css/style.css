@@ -1366,7 +1366,7 @@ body.order-form section#intro article {
       text-transform: uppercase;
       cursor: pointer;
       text-align: center;
-      margin-top: 0.9375em; }
+      margin: 0.9375em auto; }
       /* line 75, ../scss/base/_mixins.scss */
       body.order-form section#intro article .diaFields input[type='submit']:hover,
       body.order-form section#intro article .formRow input[type='submit']:hover {
@@ -1376,22 +1376,22 @@ body.order-form section#intro article {
         border-width: 2px;
         border-style: solid; }
   @media screen and (max-width: 30em) {
-    /* line 133, ../scss/base/_orderform.scss */
+    /* line 134, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 0.625em; } }
   @media screen and (max-width: 48em) and (min-width: 30.0625em) {
-    /* line 133, ../scss/base/_orderform.scss */
+    /* line 134, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 0.625em; } }
   @media screen and (min-width: 48em) {
-    /* line 133, ../scss/base/_orderform.scss */
+    /* line 134, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 2.5em; } }
-  /* line 145, ../scss/base/_orderform.scss */
+  /* line 146, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
 @media screen and (max-width: 30em) {
-  /* line 152, ../scss/base/_orderform.scss */
+  /* line 153, ../scss/base/_orderform.scss */
   body.order-form section#partners li {
     display: block;
     float: left;
@@ -1403,10 +1403,10 @@ body.order-form section#intro article {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     body.order-form section#partners li:last-child {
       margin-right: 0; }
-    /* line 159, ../scss/base/_orderform.scss */
+    /* line 160, ../scss/base/_orderform.scss */
     body.order-form section#partners li:last-child {
       padding-bottom: 0; } }
-/* line 167, ../scss/base/_orderform.scss */
+/* line 168, ../scss/base/_orderform.scss */
 body.order-form pre {
   display: block;
   float: left;
@@ -1416,7 +1416,7 @@ body.order-form pre {
   /* line 41, ../scss/neat/grid/_span-columns.scss */
   body.order-form pre:last-child {
     margin-right: 0; }
-  /* line 170, ../scss/base/_orderform.scss */
+  /* line 171, ../scss/base/_orderform.scss */
   body.order-form pre textarea {
     display: block;
     float: left;
