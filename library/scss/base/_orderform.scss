@@ -70,11 +70,14 @@ body.order-form {
         }
       }
       .error {
+        background: lighten($red, 50%);
         @include media($mobile) {
-           padding: em(30) em(10) 0 em(10);
+          margin: em(10) em(10) 0 em(10);
+          padding: em(30) em(10);
         }
         @include media($desktop) {
-           padding: em(30) em(40) 0 em(40);
+          margin: em(10) em(40) 0 em(40);
+          padding: em(30) em(40);
         }  
           margin-top: em(10);
           text-align: left;
@@ -117,10 +120,10 @@ body.order-form {
       }
       .diaFields {
         @include media($mobile) {
-           padding: 0 em(10);
+           margin: 0 em(10);
         }
         @include media($desktop) {
-           padding: 0 em(40);
+           margin: 0 em(40);
         }  
 
       }
