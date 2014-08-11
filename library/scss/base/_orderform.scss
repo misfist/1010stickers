@@ -52,6 +52,9 @@ body.order-form {
           font-family: $sans !important;
           @include font-size($small-size-l);
         }
+        &+p {
+          padding-bottom: em(10);
+        }
       }
       ul {
         li {
@@ -151,6 +154,7 @@ body.order-form {
   }
 
   section#partners {
+    padding-top: 0;
     li {
       @include media($mobile) {
         @include span-columns(12);

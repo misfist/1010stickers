@@ -1245,7 +1245,10 @@ body.order-form section#intro article {
         /* line 42, ../scss/base/_orderform.scss */
         body.order-form section#intro article p.required-note {
           margin: 10px 40px 0 40px; } }
-  /* line 57, ../scss/base/_orderform.scss */
+    /* line 55, ../scss/base/_orderform.scss */
+    body.order-form section#intro article p + p {
+      padding-bottom: 0.625em; }
+  /* line 60, ../scss/base/_orderform.scss */
   body.order-form section#intro article ul li {
     max-width: 100%;
     list-style-type: square;
@@ -1271,15 +1274,15 @@ body.order-form section#intro article {
     border: none;
     color: #0077bd;
     text-decoration: none; }
-  /* line 70, ../scss/base/_orderform.scss */
+  /* line 73, ../scss/base/_orderform.scss */
   body.order-form section#intro article .required-note,
   body.order-form section#intro article .required,
   body.order-form section#intro article .error {
     color: #d0112b; }
-  /* line 74, ../scss/base/_orderform.scss */
+  /* line 77, ../scss/base/_orderform.scss */
   body.order-form section#intro article .required-note b {
     color: #3f454f; }
-  /* line 78, ../scss/base/_orderform.scss */
+  /* line 81, ../scss/base/_orderform.scss */
   body.order-form section#intro article .error {
     background: #fde3e7;
     margin-top: 0.625em;
@@ -1287,27 +1290,27 @@ body.order-form section#intro article {
     font-weight: bold;
     font-family: "Open Sans", sans-serif !important; }
     @media screen and (max-width: 30em) {
-      /* line 78, ../scss/base/_orderform.scss */
+      /* line 81, ../scss/base/_orderform.scss */
       body.order-form section#intro article .error {
         margin: 10px 10px 0 10px;
         padding: 0.625em;
         font-size: 18px;
         font-size: 1.125rem; } }
     @media screen and (max-width: 48em) and (min-width: 30.0625em) {
-      /* line 78, ../scss/base/_orderform.scss */
+      /* line 81, ../scss/base/_orderform.scss */
       body.order-form section#intro article .error {
         margin: 10px 10px 0 10px;
         padding: 0.625em;
         font-size: 20px;
         font-size: 1.25rem; } }
     @media screen and (min-width: 48em) {
-      /* line 78, ../scss/base/_orderform.scss */
+      /* line 81, ../scss/base/_orderform.scss */
       body.order-form section#intro article .error {
         margin: 10px 40px 0 40px;
         padding: 1.25em;
         font-size: 20px;
         font-size: 1.25rem; } }
-    /* line 99, ../scss/base/_orderform.scss */
+    /* line 102, ../scss/base/_orderform.scss */
     body.order-form section#intro article .error li {
       margin-bottom: 0;
       list-style-type: square;
@@ -1315,22 +1318,22 @@ body.order-form section#intro article {
       text-align: left;
       font-size: 12px;
       font-size: 0.75rem; }
-      /* line 105, ../scss/base/_orderform.scss */
+      /* line 108, ../scss/base/_orderform.scss */
       body.order-form section#intro article .error li:first-child {
         margin-top: 0.625em; }
-  /* line 112, ../scss/base/_orderform.scss */
+  /* line 115, ../scss/base/_orderform.scss */
   body.order-form section#intro article .diaFields,
   body.order-form section#intro article .formRow {
     text-align: left;
     font-family: "Open Sans", sans-serif !important; }
-    /* line 115, ../scss/base/_orderform.scss */
+    /* line 118, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields label,
     body.order-form section#intro article .formRow label {
       font-size: 13px;
       font-size: 0.8125rem;
       font-weight: bold;
       display: block; }
-    /* line 126, ../scss/base/_orderform.scss */
+    /* line 129, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields input[type='text'],
     body.order-form section#intro article .diaFields select.blockInput,
     body.order-form section#intro article .diaFields input.blockInput,
@@ -1346,7 +1349,7 @@ body.order-form section#intro article {
       font-size: 13px;
       font-size: 0.8125rem;
       color: #4d4d4d; }
-    /* line 130, ../scss/base/_orderform.scss */
+    /* line 133, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields input[type='submit'],
     body.order-form section#intro article .formRow input[type='submit'] {
       display: inline-block;
@@ -1374,37 +1377,40 @@ body.order-form section#intro article {
         border-width: 2px;
         border-style: solid; }
   @media screen and (max-width: 30em) {
-    /* line 135, ../scss/base/_orderform.scss */
+    /* line 138, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 0.625em; } }
   @media screen and (max-width: 48em) and (min-width: 30.0625em) {
-    /* line 135, ../scss/base/_orderform.scss */
+    /* line 138, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 0.625em; } }
   @media screen and (min-width: 48em) {
-    /* line 135, ../scss/base/_orderform.scss */
+    /* line 138, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 2.5em; } }
-  /* line 147, ../scss/base/_orderform.scss */
+  /* line 150, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
-@media screen and (max-width: 30em) {
-  /* line 154, ../scss/base/_orderform.scss */
-  body.order-form section#partners li {
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 100%;
-    height: auto;
-    line-height: auto;
-    padding-bottom: 1.875em; }
-    /* line 41, ../scss/neat/grid/_span-columns.scss */
-    body.order-form section#partners li:last-child {
-      margin-right: 0; }
-    /* line 161, ../scss/base/_orderform.scss */
-    body.order-form section#partners li:last-child {
-      padding-bottom: 0; } }
-/* line 169, ../scss/base/_orderform.scss */
+/* line 156, ../scss/base/_orderform.scss */
+body.order-form section#partners {
+  padding-top: 0; }
+  @media screen and (max-width: 30em) {
+    /* line 158, ../scss/base/_orderform.scss */
+    body.order-form section#partners li {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: auto;
+      line-height: auto;
+      padding-bottom: 1.875em; }
+      /* line 41, ../scss/neat/grid/_span-columns.scss */
+      body.order-form section#partners li:last-child {
+        margin-right: 0; }
+      /* line 165, ../scss/base/_orderform.scss */
+      body.order-form section#partners li:last-child {
+        padding-bottom: 0; } }
+/* line 173, ../scss/base/_orderform.scss */
 body.order-form pre {
   display: block;
   float: left;
@@ -1414,7 +1420,7 @@ body.order-form pre {
   /* line 41, ../scss/neat/grid/_span-columns.scss */
   body.order-form pre:last-child {
     margin-right: 0; }
-  /* line 172, ../scss/base/_orderform.scss */
+  /* line 176, ../scss/base/_orderform.scss */
   body.order-form pre textarea {
     display: block;
     float: left;
