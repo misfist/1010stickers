@@ -1225,7 +1225,8 @@ body.order-form section#intro article {
     display: none; }
   /* line 38, ../scss/base/_orderform.scss */
   body.order-form section#intro article p {
-    font-size: 16;
+    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
     margin: 0; }
     /* line 42, ../scss/base/_orderform.scss */
