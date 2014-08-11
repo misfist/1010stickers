@@ -119,9 +119,11 @@ body.order-form {
         }
         input {}
         input[type='text'],
+        select.blockInput,
         input.blockInput,
         .stateSelect select,
-        .stateSelect option {
+        .stateSelect option,
+        .blockInput option {
           @include font-size($small-size-l);
           color: $gray8;
         }
@@ -129,7 +131,6 @@ body.order-form {
           @include button($bordercolor: $red, $hovercolor: $blue, $hoverbackground: $white, $hoverborder: $blue);
           margin: em(15) auto;
         }
-
       }
       .supporterInfo {
         @include media($mobile) {

@@ -49,7 +49,7 @@ require getcwd() .'/library/scripts/image-array.php';
                 <ul class="partners">
                     <li class="partner-logo"><a href="http://businessforafairminimumwage.org" target="_blank"><img alt="Business for a Fair Minimum Wage logo" src="library/images/partners/logo_1.png" class="bfmw" /></a></li>
                     <li class="partner-logo"><a href="http://mainstreetalliance.org" target="_blank"><img alt="The Main Street Alliance logo" src="library/images/partners/logo_2.png" class="msa" /></a></li>
-                    <li class="partner-logo"><a href="http://smartcapitalists.org" target="_blank"><img alt="Smart Capitalists for American Prosperity log" src="library/images/partners/logo_3.png" class="scap" /></a></li>
+                    <!-- <li class="partner-logo"><a href="http://smartcapitalists.org" target="_blank"><img alt="Smart Capitalists for American Prosperity log" src="library/images/partners/logo_3.png" class="scap" /></a></li> -->
                     <li class="partner-logo"><a href="http://uncommongoods.com/" target="_blank"><img alt="Uncommon Goods logo" src="library/images/partners/logo_4.png" class="ug" /></a></li>
                 </ul>
             </article>
@@ -84,12 +84,12 @@ require getcwd() .'/library/scripts/image-array.php';
                     <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#109;&#97;&#105;&#110;&#115;&#116;&#114;&#101;&#101;&#116;&#97;&#108;&#108;&#105;&#97;&#110;&#99;&#101;&#46;&#111;&#114;&#103;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#37;&#50;&#48;&#83;&#117;&#98;&#109;&#105;&#115;&#115;&#105;&#111;&#110;">&#105;&#110;&#102;&#111;&#64;&#109;&#97;&#105;&#110;&#115;&#116;&#114;&#101;&#101;&#116;&#97;&#108;&#108;&#105;&#97;&#110;&#99;&#101;&#46;&#111;&#114;&#103;</a></p>
                     <p>206.568.5400</p>
                 </li>
-                <li>
+                <!-- <li>
                     <p><strong>Smart Capitalists for American Prosperity</strong></p>
                     <p><a href="http://smartcapitalists.org" target="_blank">smartcapitalists.org</a></p>
                     <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#114;&#105;&#99;&#97;&#64;&#97;&#103;&#101;&#110;&#100;&#97;&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#46;&#111;&#114;&#103;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#37;&#50;&#48;&#83;&#117;&#98;&#109;&#105;&#115;&#115;&#105;&#111;&#110;">&#101;&#114;&#105;&#99;&#97;&#64;&#97;&#103;&#101;&#110;&#100;&#97;&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#46;&#111;&#114;&#103;</a></p>
                     <p>202.446.0489</p>
-                </li>
+                </li> -->
             </ul>
         </section>
     </footer>

@@ -103,12 +103,11 @@ section#partners {
           }
       }
       @include media($tablet) {
-        @include span-columns(6);
-         @include omega(2n);
+        @include span-columns(12);
       }
       @include media($desktop) {
-        @include span-columns(3);
-         @include omega(4n);
+        @include span-columns(4);
+        @include omega(3n);
       }
 
       img {

@@ -877,15 +877,15 @@ body > footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 31.76157%; }
+        width: 48.82117%; }
         /* line 41, ../scss/neat/grid/_span-columns.scss */
         body > footer ul li:last-child {
           margin-right: 0; }
         /* line 70, ../scss/neat/grid/_omega.scss */
-        body > footer ul li:nth-child(3n) {
+        body > footer ul li:nth-child(2n) {
           margin-right: 0; }
         /* line 75, ../scss/neat/grid/_omega.scss */
-        body > footer ul li:nth-child(3n+1) {
+        body > footer ul li:nth-child(2n+1) {
           clear: left; } }
     /* line 34, ../scss/base/_footer.scss */
     body > footer ul li strong {
@@ -1083,55 +1083,49 @@ section#partners {
           display: block;
           float: left;
           margin-right: 2.35765%;
-          width: 48.82117%; }
+          width: 100%; }
           /* line 41, ../scss/neat/grid/_span-columns.scss */
           section#partners ul.partners li:last-child {
-            margin-right: 0; }
-          /* line 70, ../scss/neat/grid/_omega.scss */
-          section#partners ul.partners li:nth-child(2n) {
-            margin-right: 0; }
-          /* line 75, ../scss/neat/grid/_omega.scss */
-          section#partners ul.partners li:nth-child(2n+1) {
-            clear: left; } }
+            margin-right: 0; } }
       @media screen and (min-width: 48em) {
         /* line 91, ../scss/base/_content.scss */
         section#partners ul.partners li {
           display: block;
           float: left;
           margin-right: 2.35765%;
-          width: 23.23176%; }
+          width: 31.76157%; }
           /* line 41, ../scss/neat/grid/_span-columns.scss */
           section#partners ul.partners li:last-child {
             margin-right: 0; }
           /* line 70, ../scss/neat/grid/_omega.scss */
-          section#partners ul.partners li:nth-child(4n) {
+          section#partners ul.partners li:nth-child(3n) {
             margin-right: 0; }
           /* line 75, ../scss/neat/grid/_omega.scss */
-          section#partners ul.partners li:nth-child(4n+1) {
+          section#partners ul.partners li:nth-child(3n+1) {
             clear: left; } }
-      /* line 114, ../scss/base/_content.scss */
+      /* line 113, ../scss/base/_content.scss */
       section#partners ul.partners li img {
         width: 100%;
         height: auto;
         vertical-align: middle; }
-        /* line 120, ../scss/base/_content.scss */
+        /* line 119, ../scss/base/_content.scss */
         section#partners ul.partners li img.bfmw {
           max-width: 142px; }
-        /* line 123, ../scss/base/_content.scss */
+        /* line 122, ../scss/base/_content.scss */
         section#partners ul.partners li img.msa {
           max-width: 195px; }
-        /* line 126, ../scss/base/_content.scss */
+        /* line 125, ../scss/base/_content.scss */
         section#partners ul.partners li img.scap {
           max-width: 214px; }
-        /* line 129, ../scss/base/_content.scss */
+        /* line 128, ../scss/base/_content.scss */
         section#partners ul.partners li img.ug {
           max-width: 200px; }
 
-/* line 138, ../scss/base/_content.scss */
+/* line 137, ../scss/base/_content.scss */
 section#photos {
   text-align: center;
   padding-bottom: 1.75em; }
-  /* line 141, ../scss/base/_content.scss */
+  /* line 140, ../scss/base/_content.scss */
   section#photos ul {
     *zoom: 1;
     padding-top: 2.5em;
@@ -1145,7 +1139,7 @@ section#photos {
     section#photos ul:after {
       clear: both; }
     @media screen and (max-width: 30em) {
-      /* line 146, ../scss/base/_content.scss */
+      /* line 145, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1155,7 +1149,7 @@ section#photos {
         section#photos ul li:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 48em) and (min-width: 30.0625em) {
-      /* line 146, ../scss/base/_content.scss */
+      /* line 145, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1171,7 +1165,7 @@ section#photos {
         section#photos ul li:nth-child(2n+1) {
           clear: left; } }
     @media screen and (min-width: 48em) {
-      /* line 146, ../scss/base/_content.scss */
+      /* line 145, ../scss/base/_content.scss */
       section#photos ul li {
         display: block;
         float: left;
@@ -1186,7 +1180,7 @@ section#photos {
         /* line 75, ../scss/neat/grid/_omega.scss */
         section#photos ul li:nth-child(3n+1) {
           clear: left; } }
-    /* line 158, ../scss/base/_content.scss */
+    /* line 157, ../scss/base/_content.scss */
     section#photos ul li.hidden {
       display: none; }
 
@@ -1336,19 +1330,23 @@ body.order-form section#intro article {
       font-size: 0.8125rem;
       font-weight: bold;
       display: block; }
-    /* line 124, ../scss/base/_orderform.scss */
+    /* line 126, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields input[type='text'],
+    body.order-form section#intro article .diaFields select.blockInput,
     body.order-form section#intro article .diaFields input.blockInput,
     body.order-form section#intro article .diaFields .stateSelect select,
     body.order-form section#intro article .diaFields .stateSelect option,
+    body.order-form section#intro article .diaFields .blockInput option,
     body.order-form section#intro article .formRow input[type='text'],
+    body.order-form section#intro article .formRow select.blockInput,
     body.order-form section#intro article .formRow input.blockInput,
     body.order-form section#intro article .formRow .stateSelect select,
-    body.order-form section#intro article .formRow .stateSelect option {
+    body.order-form section#intro article .formRow .stateSelect option,
+    body.order-form section#intro article .formRow .blockInput option {
       font-size: 13px;
       font-size: 0.8125rem;
       color: #4d4d4d; }
-    /* line 128, ../scss/base/_orderform.scss */
+    /* line 130, ../scss/base/_orderform.scss */
     body.order-form section#intro article .diaFields input[type='submit'],
     body.order-form section#intro article .formRow input[type='submit'] {
       display: inline-block;
@@ -1376,22 +1374,22 @@ body.order-form section#intro article {
         border-width: 2px;
         border-style: solid; }
   @media screen and (max-width: 30em) {
-    /* line 134, ../scss/base/_orderform.scss */
+    /* line 135, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 0.625em; } }
   @media screen and (max-width: 48em) and (min-width: 30.0625em) {
-    /* line 134, ../scss/base/_orderform.scss */
+    /* line 135, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 0.625em; } }
   @media screen and (min-width: 48em) {
-    /* line 134, ../scss/base/_orderform.scss */
+    /* line 135, ../scss/base/_orderform.scss */
     body.order-form section#intro article .supporterInfo {
       margin: 0 2.5em; } }
-  /* line 146, ../scss/base/_orderform.scss */
+  /* line 147, ../scss/base/_orderform.scss */
   body.order-form section#intro article p#jQ-uid-3 {
     display: none; }
 @media screen and (max-width: 30em) {
-  /* line 153, ../scss/base/_orderform.scss */
+  /* line 154, ../scss/base/_orderform.scss */
   body.order-form section#partners li {
     display: block;
     float: left;
@@ -1403,10 +1401,10 @@ body.order-form section#intro article {
     /* line 41, ../scss/neat/grid/_span-columns.scss */
     body.order-form section#partners li:last-child {
       margin-right: 0; }
-    /* line 160, ../scss/base/_orderform.scss */
+    /* line 161, ../scss/base/_orderform.scss */
     body.order-form section#partners li:last-child {
       padding-bottom: 0; } }
-/* line 168, ../scss/base/_orderform.scss */
+/* line 169, ../scss/base/_orderform.scss */
 body.order-form pre {
   display: block;
   float: left;
@@ -1416,7 +1414,7 @@ body.order-form pre {
   /* line 41, ../scss/neat/grid/_span-columns.scss */
   body.order-form pre:last-child {
     margin-right: 0; }
-  /* line 171, ../scss/base/_orderform.scss */
+  /* line 172, ../scss/base/_orderform.scss */
   body.order-form pre textarea {
     display: block;
     float: left;
