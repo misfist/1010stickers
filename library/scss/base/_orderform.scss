@@ -15,37 +15,42 @@ body.order-form {
     }
   }
   section#intro {
+      article {
+        font-family: $lora !important;
+        color: $gray4;
+        .salsa {
+          margin: 0;
+        }
       h3 {
         font-family: $lora !important;
         color: $gray4;
         padding-bottom: em(20);
         @include media($mobile) {
-          font-size: em(18);
+          @include font-size($h3-size-s);
         }
         @include media($desktop) {
-          font-size: em(20);
+          @include font-size($body-size-l);
         }
       }
-      article {
-        font-family: $lora !important;
-        color: $gray4;
-      
       h2 {
         display: none;
       }
       p {
         font-size: $body-size-s;
         text-align: left;
+        margin: 0;
         &.required-note {
-        @include media($mobile) {
-           padding: em(30) em(10) 0 em(10);
-        }
-        @include media($desktop) {
-           padding: em(30) em(40) 0 em(40);
-        }         
-          margin-bottom: 0;
+          @include media($mobile) {
+            margin: 10px 10px 0 10px;
+          }
+          @include media($tablet) {
+            margin: 10px 10px 0 10px;
+          }
+          @include media($desktop) {
+            margin: 10px 40px 0 40px;
+          }  
           font-family: $sans !important;
-          font-size: em(13);
+          @include font-size($small-size-l);
         }
       }
       ul {
@@ -55,6 +60,7 @@ body.order-form {
           list-style-position: inside;
           text-align: left;
           font-size: em(16);
+          @include font-size($body-size-s);
         }
       }
       @include standard-links ($color: $red, $vcolor: $red, $hcolor: $blue, $weight: normal);
@@ -72,24 +78,30 @@ body.order-form {
       .error {
         background: lighten($red, 50%);
         @include media($mobile) {
-          margin: em(10) em(10) 0 em(10);
-          padding: em(30) em(10);
+          margin: 10px 10px 0 10px;
+          padding: em(10);
+          @include font-size($h3-size-s);
+        }
+        @include media($tablet) {
+          margin: 10px 10px 0 10px;
+          padding: em(10);
+          @include font-size($body-size-l);
         }
         @include media($desktop) {
-          margin: em(10) em(40) 0 em(40);
-          padding: em(30) em(40);
+          margin: 10px 40px 0 40px;
+          padding: em(20);
+          @include font-size($body-size-l);
         }  
           margin-top: em(10);
           text-align: left;
           font-weight: bold;
           font-family: $sans !important;
-          font-size: em(13);
         li {
           margin-bottom: 0;
           list-style-type: square;
           list-style-position: inside;
           text-align: left;
-          font-size: em(15);
+          @include font-size($small-size-s);
           &:first-child {
             margin-top: em(10);
           }
@@ -101,7 +113,7 @@ body.order-form {
         text-align: left;
         font-family: $sans !important;
         label {
-          font-size: em(13);
+          @include font-size($small-size-l);
           font-weight: bold;
           display: block;
         }
@@ -110,7 +122,7 @@ body.order-form {
         input.blockInput,
         .stateSelect select,
         .stateSelect option {
-          font-size: em(13);
+          @include font-size($small-size-l);
           color: $gray8;
         }
         input[type='submit'] {
@@ -118,9 +130,12 @@ body.order-form {
           margin-top: em(15);
         }
       }
-      .diaFields {
+      .supporterInfo {
         @include media($mobile) {
            margin: 0 em(10);
+        }
+        @include media($tablet) {
+          margin: 0 em(10);
         }
         @include media($desktop) {
            margin: 0 em(40);
