@@ -66,7 +66,7 @@ require getcwd() .'/library/scripts/image-array.php';
     </main>
     <footer class="footer">
         <section id="footer">
-            <div class="copyright">&#0169; 2014 Business for a Fair Minimum Wage, The Main Street Alliance and Smart Capitalists for American Prosperity. All Rights Reserved.</div>
+            <div class="copyright">&#0169; 2014 Business for a Fair Minimum Wage and The Main Street Alliance. All Rights Reserved.</div>
             <h4 class="footer-nav">Contact Us</h4>
             <ul class="contacts">
                 <li>
