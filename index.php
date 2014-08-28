@@ -7,7 +7,7 @@ require getcwd() .'/library/scripts/image-array.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Order a $10.10 Minimum Wage Sticker</title>
+    <title>$10.10 Minimum Wage Business Decal</title>
 
     <link rel="stylesheet" href="library/css/style.css">
     <script src="library/js/jquery-1.11.1.js"></script>
