@@ -1191,7 +1191,7 @@ section#photos {
       overflow: hidden;
       max-width: 100%;
       height: auto;
-      border-bottom: 2em solid black; }
+      border-bottom: 1.6em solid black; }
       /* line 170, ../scss/base/_content.scss */
       section#photos ul li .embed-container iframe,
       section#photos ul li .embed-container object,
