@@ -1190,8 +1190,9 @@ section#photos {
       height: 0;
       overflow: hidden;
       max-width: 100%;
-      height: auto; }
-      /* line 169, ../scss/base/_content.scss */
+      height: auto;
+      border-bottom: 2em solid black; }
+      /* line 170, ../scss/base/_content.scss */
       section#photos ul li .embed-container iframe,
       section#photos ul li .embed-container object,
       section#photos ul li .embed-container embed {
