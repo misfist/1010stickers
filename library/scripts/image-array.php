@@ -21,7 +21,6 @@ function build_image_list() {
       }
     }
   }
-  sort($output);
   return $output;
 }
 
