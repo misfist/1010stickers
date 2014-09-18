@@ -9,7 +9,7 @@ function build_image_list() {
     $image_list[] = $entry;
   }
   //Sort images
-  rsort($image_list);
+  sort($image_list);
 
   $count = 0;
   $output = '';
