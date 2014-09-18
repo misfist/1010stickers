@@ -8,6 +8,9 @@ function build_image_list() {
   while( false !== ($entry = readdir($handle))) {  
     $image_list[] = $entry;
   }
+  //Sort images
+  rsort($image_list);
+
   $count = 0;
   $output = '';
   foreach($image_list as $key => $image) {
