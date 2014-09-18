@@ -12,7 +12,7 @@ function build_image_list() {
   $output = '';
   foreach($image_list as $key => $image) {
     if($image != '.' && $image != '..') {
-      if($count < 6) {
+      if($count < 5) {
          $output .= '<li class="business-photo"><img alt="Business Name" src="' ."images/$image" .'"/></li>';
          $count++;
       }else{
